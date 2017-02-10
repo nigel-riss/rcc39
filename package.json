@@ -1,0 +1,29 @@
+{
+  "name": "rcc39",
+  "version": "1.0.0",
+  "description": "Site for rcc39",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigel-riss/rcc39.git"
+  },
+  "author": "Yuriy Kurenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigel-riss/rcc39/issues"
+  },
+  "homepage": "https://github.com/nigel-riss/rcc39#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "sass-module-importer": "^1.4.0"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}
