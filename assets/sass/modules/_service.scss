@@ -1,0 +1,40 @@
+.service {
+
+    &__title {
+        // positioning
+        position: relative;
+
+        // typography
+        color: $copyColor;
+        font-family: $captionFont;
+        font-size: 1.5rem;
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+
+            // box model
+            height: 2px;
+            width: 20px;
+
+            // visual
+            background-color: $mainOrange;
+        }
+    }
+
+    &__list {
+        // box model
+        margin: 0;
+        padding: 0 1.125rem;
+    }
+
+    &__item {
+        // typography
+        font-size: 1.125rem;
+        line-height: 1.4;
+    }
+}

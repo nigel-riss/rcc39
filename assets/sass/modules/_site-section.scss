@@ -1,0 +1,8 @@
+.site-section {
+    // box model
+    padding: 100px 0;
+    &--grey {
+        // visual
+        background-color: $bgLightGrey;
+    }
+}
