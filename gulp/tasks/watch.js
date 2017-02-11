@@ -12,4 +12,14 @@ gulp.task('watch', function() {
     watch('./app/*.html', function() {
         browserSync.reload();
     });
+
+    watch('./app/assets/sass/**/*.scss', function() {
+        gulp.start('cssInject');
+    });
 });
+
+
+gulp.task('cssInject', ['styles'], function() {
+    return gulp.src('./app/temp/styles/styles.css')
+        .pipe(browserSync.stream());
+})

@@ -1,0 +1,65 @@
+.site-header {
+    // box model
+    // height: 275px;
+
+    // visual
+    background-color: $bgDark;
+    background-image: url('../../assets/img/header-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+
+    &__menu-content {
+        // visual
+        background-color: rgba($mainYellow, 0.9);
+    }
+
+    &__logo-n-title {
+        // box model
+        float: left;
+    }
+
+    &__logo {
+        // box model
+        padding-top: 50px;
+
+        // typography
+        color: #ffffff;
+        font-family: $captionFont;
+        font-size: 2rem;
+        font-weight: 400;
+
+        span {
+            // typography
+            color: $mainOrange;
+        }
+    }
+
+    &__title {
+        // box model
+
+        // typography
+        color: #ffffff;
+        font-family: $captionFont;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        // visual
+    }
+
+    &__contacts {
+        // box model
+        float: right;
+        padding-top: 50px;
+
+        // typography
+        color: #ffffff;
+    }
+
+    &__phone {
+        // typography
+        color: #ffffff;
+        font-family: $captionFont;
+        font-size: 3rem;
+    }
+}
