@@ -19,6 +19,10 @@
     }
 
     &__logo {
+        // positioning
+        position: relative;
+        z-index: 2;
+
         // box model
         padding-top: 50px;
 
@@ -32,10 +36,31 @@
             // typography
             color: $mainOrange;
         }
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            top: 30px;
+            left: -30px;
+            z-index: -1;
+
+            // box model
+            height: 160px;
+            width: 100px;
+
+            // visual
+            border: 5px solid $mainOrange;
+            border-right: none;
+        }
     }
 
     &__title {
         // box model
+        margin: 0;
+        padding: 15px 0;
+        padding-bottom: 40px;
 
         // typography
         color: #ffffff;
@@ -54,6 +79,7 @@
 
         // typography
         color: #ffffff;
+        text-align: right;
     }
 
     &__phone {
@@ -61,5 +87,22 @@
         color: #ffffff;
         font-family: $captionFont;
         font-size: 3rem;
+    }
+
+    &__button {
+        // box model
+        display: inline-block;
+        margin-top: 10px;
+        padding: 15px;
+        padding-left: 20px;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+        font-size: 1.5rem;
+        text-decoration: none;
+        
+        // visual
+        background-color: $mainYellow;
     }
 }
