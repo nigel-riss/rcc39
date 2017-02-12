@@ -1,0 +1,21 @@
+.button {
+    // box model
+    float: right;
+    // display: inline-block;
+    padding: 30px 50px;
+
+    // typography
+    color: $copyDark;
+    font-family: $captionFont;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    // visual
+    border: 2px solid $mainOrange;
+
+    &::after {
+        content: " +";
+        color: $mainOrange;
+        display: inline-block;
+    }
+}

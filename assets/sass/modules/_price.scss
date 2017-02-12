@@ -1,22 +1,25 @@
-.site-section {
-    // box model
-    padding: 100px 0;
-    &--grey {
-        // visual
-        background-color: $bgLightGrey;
-    }
+.price {
+    // typography
+    font-size: 0;
 
-    &--price {
-        // box model
-        padding-bottom: 0;
-    }
 
     &__header {
         // box model
-        padding-bottom: 60px;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        height: 80vh;
+        min-height: 700px;
+        padding-top: 300px;
 
         // typography
-        font-size: 0;
+        text-align: right;
+
+        // visual
+        background-color: #a6a6a6;
+        background-image: url('../../assets/img/price-bg.jpg');
+        background-position: center center;
+        background-size: cover;
     }
 
     &__title {
@@ -30,12 +33,13 @@
         margin: 0;
         padding: 0;
         padding-left: 30px;
-        width: 50%;
+        width: 600px;
 
         // typography
-        color: $copyDark;
+        color: #ffffff;
         font-family: $captionFont;
         font-size: 2.25rem;
+        text-align: left;
 
         small {
             // box model
@@ -66,17 +70,14 @@
         }
     }
 
-    &__subtitle {
+    &__body {
         // box model
         display: inline-block;
-        padding-top: 10px;
         vertical-align: top;
         width: 50%;
+        height: 80vh;
+        min-height: 700px;
 
-        // typography
-        font-family: $mainFont;
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1.4;
+        // visual
     }
 }

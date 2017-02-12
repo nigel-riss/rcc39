@@ -15,7 +15,7 @@
         </div>
         <div class="site-header__contacts">
             <div class="site-header__phone"><small>+7 (4012)</small> 40-39-00</div>
-            <a href="">Оставить заявку</a>
+            <a class="site-header__button" href="">Оставить заявку +</a>
         </div>
     </div>
 
@@ -52,24 +52,31 @@
             
             <div class="hero__order">
                 Данные мероприятия могут быть оказаны в комплексе или по отдельности
-                <a href="">Оставить заявку</a>
+                <a class="hero__button" href="">Оставить заявку</a>
             </div>
         </div>
     </section>
 
-    <section class="site-section  site-section--promotion">
-        Акция!
-        При заказе полного комплекта услуг — 
-        проект электроснабжения Вашего дома
-        Бесплатно
-    </section>
+    <div class="promotion">
+        <div class="wrapper">
+            <div class="promotion__title">
+                Акция!
+            </div>
+            <div class="promotion__text">
+                При заказе полного комплекта услуг — <br>
+                проект электроснабжения Вашего дома
+            </div>
+            <div class="promotion__free">
+                Бесплатно
+            </div>
+        </div>
+    </div>
 
     <section class="site-section  site-section--grey">
         <header class="site-section__header">
             <div class="wrapper">
                 <h2 class="site-section__title">
-                    <small>Полный спектр</small>
-                    Наши услуги
+                    <small>Полный спектр</small>Наши услуги
                 </h2>
                 <p class="site-section__subtitle">
                     Выполняем электроснабжение домов индивидуальных и многоквартирных, коммерческой недвижимости под ключ
@@ -164,18 +171,22 @@
                     </li>
                 </ul>
             </div>
+
+            <a class="button" href="">Оформить заявку </a>
         </div>
     </section>
 
-    <section class="site-section">
+    <section class="site-section  site-section--price">
         <header class="site-section__header">
-            <h2 class="site-section__title">
-                <small>Стоимость работ</small>
-                Прайс на услуги
-            </h2>
-            <p class="site-section__subtitle">
-                Список основных услуг и их стоимость, для уточнения любых вопросов рассчета общей суммы проектов обратитесь к нашему менеджеру
-            </p>
+            <div class="wrapper">
+                <h2 class="site-section__title">
+                    <small>Стоимость работ</small>
+                    Прайс на услуги
+                </h2>
+                <p class="site-section__subtitle">
+                    Список основных услуг и их стоимость, для уточнения любых вопросов рассчета общей суммы проектов обратитесь к нашему менеджеру
+                </p>
+            </div>
         </header>
 
         <div class="price">
@@ -186,7 +197,7 @@
                 </h2>
             </div>
             <div class="price__body">
-                <div class="price__item price-item">
+                <div class="price-item price-item--border-right">
                     <div class="price-item__icon"></div>
                     <h3 class="price-item__title">
                         Оформление документации
@@ -207,7 +218,7 @@
                     </table>
                 </div>
 
-                <div class="price__item price-item">
+                <div class="price-item">
                     <div class="price-item__icon"></div>
                     <h3 class="price-item__title">
                         Монтаж наружных сетей
@@ -228,7 +239,7 @@
                     </table>
                 </div>
 
-                <div class="price__item price-item">
+                <div class="price-item price-item--border-right price-item--border-top">
                     <div class="price-item__icon"></div>
                     <h3 class="price-item__title">
                         Монтаж внутренних сетей
@@ -249,7 +260,7 @@
                     </table>
                 </div>
 
-                <div class="price__item price-item">
+                <div class="price-item price-item--border-top">
                     Минимальная стоимость
                     Электромонтажных работ в городе Калининграде
                     1 500 рублей

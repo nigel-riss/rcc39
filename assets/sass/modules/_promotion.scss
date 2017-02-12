@@ -1,0 +1,44 @@
+.promotion {
+    // box model
+    padding: 80px 0;
+
+    // typography
+    text-align: center;
+
+    // visual
+    background-color: $mainYellow;
+    background-image: url('../../assets/img/promo-bg.jpg');
+
+    &__title {
+        // box model
+        padding-bottom: 0.5em;
+
+        // typography
+        color: $copyBrown;
+        font-family: $mainFont;
+        font-size: 4.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        // typography
+        color: $copyBrown;
+        font-family: $mainFont;
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    &__free {
+        // box model
+        padding-top: 0.3em;
+
+        // typography
+        color: $copyDark;
+        font-family: $mainFont;
+        font-stretch: condensed;
+        font-size: 5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
