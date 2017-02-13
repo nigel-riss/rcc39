@@ -1,6 +1,6 @@
 .promotion {
     // box model
-    padding: 80px 0;
+    padding: 60px 0;
 
     // typography
     text-align: center;
@@ -9,6 +9,11 @@
     background-color: $mainYellow;
     background-image: url('../../assets/img/promo-bg.jpg');
 
+    @include atDesktop {
+        // box model
+        padding: 80px 0;
+    }
+
     &__title {
         // box model
         padding-bottom: 0.5em;
@@ -16,17 +21,27 @@
         // typography
         color: $copyBrown;
         font-family: $mainFont;
-        font-size: 4.5rem;
+        font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include atDesktop {
+            // typography
+            font-size: 4.5rem;
+        }
     }
 
     &__text {
         // typography
         color: $copyBrown;
         font-family: $mainFont;
-        font-size: 3rem;
+        font-size: 1.25rem;
         line-height: 1.2;
+
+        @include atDesktop {
+            // typography
+            font-size: 3rem;
+        }
     }
 
     &__free {
@@ -37,8 +52,13 @@
         color: $copyDark;
         font-family: $mainFont;
         font-stretch: condensed;
-        font-size: 5rem;
+        font-size: 3rem;
         font-weight: 700;
         text-transform: uppercase;
+
+        @include atDesktop {
+            // typography
+            font-size: 5rem;
+        }
     }
 }
