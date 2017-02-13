@@ -18,10 +18,15 @@
 
     li {
         // box model
-        display: inline-block;
+        display: block;
 
         // visual
         list-style: none;
+
+        @include atTabletsLandscape {
+            // box model
+            display: inline-block;
+        }
     }
 
     a {
