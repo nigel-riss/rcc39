@@ -1,7 +1,7 @@
 .site-footer {
     // box model
     // height: 700px;
-    margin-top: 200px;
+    // margin-top: 200px;
 
     // typography
     font-size: 0;
@@ -10,6 +10,11 @@
     background-image: url("../../assets/img/footer-bg.jpg");
     background-position: left top;
     background-size: cover;
+
+    @include atTabletsLandscape {
+        // box model
+        margin-top: 200px;
+    }
 
     &__contacts {
         // box model

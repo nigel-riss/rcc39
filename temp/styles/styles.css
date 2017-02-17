@@ -1033,11 +1033,13 @@ html {
   text-transform: uppercase; }
 
 .site-footer {
-  margin-top: 200px;
   font-size: 0;
   background-image: url("../../assets/img/footer-bg.jpg");
   background-position: left top;
   background-size: cover; }
+  @media (min-width: 900px) {
+    .site-footer {
+      margin-top: 200px; } }
   .site-footer__contacts {
     padding-top: 30px; }
     @media (min-width: 900px) {
