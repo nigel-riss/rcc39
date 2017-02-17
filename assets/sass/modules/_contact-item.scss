@@ -9,7 +9,12 @@
     &__icon {
         // box model
         float: left;
-        width: 50px;
+        width: 40px;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 50px;
+        }
     }
 
     &__content {
@@ -17,15 +22,20 @@
         position: relative;
         
         // box model
-        padding-left: 95px;
+        padding-left: 85px;
         padding-right: 20px;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-left: 95px;
+        }
 
         &::before {
             content: "";
 
             // positioning
             position: absolute;
-            left: 72px;
+            left: 67px;
             // top: 10px;
 
             // box model
@@ -42,16 +52,27 @@
         // typography
         color: #aaaaaa;
         font-family: $mainFont;
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 400;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+
+        }
     }
 
     &__text {
         // typography
         color: #ffffff;
         font-family: $mainFont;
-        font-size: 1rem;
+        font-size: 0.8125rem;
         line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1rem;
+        }
 
         a {
             // typography

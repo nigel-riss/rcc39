@@ -1,6 +1,7 @@
 .site-footer {
     // box model
-    height: 700px;
+    // height: 700px;
+    margin-top: 200px;
 
     // typography
     font-size: 0;
@@ -12,23 +13,50 @@
 
     &__contacts {
         // box model
-        float:left;
         padding-top: 30px;
-        width: 400px;
         // border: 1px solid red;
+
+        @include atTabletsLandscape {
+            // box model
+            float:left;
+            margin-left: 20px;
+            width: 400px;
+        }
+
+        @include atDesktop {
+        }
     }
 
     &__map {
-        float:left;
-        width: 400px;
-        border: 1px solid red;
+       // box model
+       display: none;
+
+        @include atDesktop {
+            // box model
+            display: block;
+            float:left;
+            width: 400px;
+            border: 1px solid transparent;
+        }
 
     }
 
     &__feedback-form {
         // box model
-        float:left;
-        padding-left: 30px;
-        width: 400px;
+        margin: 0 -15px;
+
+        @include atTabletsLandscape {
+            // box model
+            float:right;
+            margin-right: 20px;
+            width: 400px;
+        }
+
+        // @include atDesktop {
+        //     // box model
+        //     float:right;
+        //     padding-left: 30px;
+        //     width: 400px;
+        // }
     }
 }

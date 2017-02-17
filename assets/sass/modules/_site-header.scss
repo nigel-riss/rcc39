@@ -12,7 +12,7 @@
     background-position: center center;
     background-size: cover;
 
-    @include atTabletsPortrait {
+    @include atTabletsLandscape {
         // box model
         padding-bottom: 0;
     }
@@ -21,7 +21,7 @@
         // positioning
         position: absolute;
         top: 140px;
-        z-index: 10;
+        z-index: -10;
 
         // box model
         width: 100%;
@@ -30,10 +30,11 @@
         opacity: 0;
         background-color: rgba($mainYellow, 0.9);
 
-        @include atTabletsPortrait {
+        @include atTabletsLandscape {
             // positioning
             position: relative;
             top: 0;
+            z-index: 10;
 
             // visual
             opacity: 1;
@@ -42,6 +43,7 @@
         &--is-visible {
             // visual
             opacity: 1;
+            z-index: 10;
         }
     }
 
@@ -55,7 +57,7 @@
         height: 24px;
         width: 24px;
 
-        @include atTabletsPortrait {
+        @include atTabletsLandscape {
             // box model
             display: none;
         }
@@ -131,7 +133,7 @@
     }
 
     &__logo-n-title {
-        @include atTabletsLandscape{
+        @include atTabletsPortrait{
             // box model
             float: left;
         }
@@ -246,7 +248,7 @@
         color: #ffffff;
         text-align: right;
 
-        @include atTabletsLandscape {
+        @include atTabletsPortrait {
             // box model
             float: right;
         }
