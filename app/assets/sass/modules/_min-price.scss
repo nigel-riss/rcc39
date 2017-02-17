@@ -2,12 +2,18 @@
     &__title {
         // box model
         margin: 0;
-        padding-top: 50px;
+        padding-top: 0;
 
         // typography
         color: $mainOrange;
         font-family: $captionFont;
-        font-size: 2rem;
+        font-size: 1.5rem;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-top: 50px;
+            font-size: 2rem;
+        }
     }
 
     &__subtitle {

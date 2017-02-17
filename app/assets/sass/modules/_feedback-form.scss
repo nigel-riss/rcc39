@@ -1,10 +1,15 @@
 .feedback-form {
     // positioning
     position: relative;
-    top: -112px;
+    top: 0;
 
     // typography
     font-size: 0;
+
+    @include atTabletsLandscape {
+        // positioning
+        top: -112px;
+    }
 
     &__header {
         // positioning
@@ -145,10 +150,12 @@
         color: #ffffff;
         font-family: $captionFont;
         font-size: 1rem;
+        line-height: 1.4;
         text-align: center;
         text-transform: uppercase;
 
         // visual
         background-color: $copyDark;
+        cursor: pointer;
     }
 }

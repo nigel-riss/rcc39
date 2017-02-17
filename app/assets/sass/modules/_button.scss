@@ -1,17 +1,37 @@
 .button {
     // box model
-    float: right;
-    // display: inline-block;
+    display: block;
+    margin-top: 20px;
     padding: 30px 50px;
+    width: 100%;
 
     // typography
     color: $copyDark;
     font-family: $captionFont;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    text-align: center;
     text-decoration: none;
 
     // visual
     border: 2px solid $mainOrange;
+
+    @include atTabletsPortrait {
+        // box model
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    @include atDesktop {
+        // box model
+        float: right;
+        margin-top: -140px;
+        width: auto;
+
+        // typography
+        font-size: 1.5rem;
+    }
 
     &::after {
         content: " +";

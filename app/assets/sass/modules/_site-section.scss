@@ -1,6 +1,12 @@
 .site-section {
     // box model
-    padding: 100px 0;
+    padding: 60px 0;
+
+    @include atDesktop {
+        // box model
+        padding: 100px 0;
+    }
+
     &--grey {
         // visual
         background-color: $bgLightGrey;
@@ -17,6 +23,10 @@
 
         // typography
         font-size: 0;
+
+        @include atDesktop {
+            // box model
+        }
     }
 
     &__title {
@@ -30,12 +40,25 @@
         margin: 0;
         padding: 0;
         padding-left: 30px;
-        width: 50%;
+        width: 100%;
 
         // typography
         color: $copyDark;
         font-family: $captionFont;
-        font-size: 2.25rem;
+        font-size: 1.5rem;
+
+        @include atTabletsPortrait {
+            // box model
+            width: 50%;
+
+            // typography
+            font-size: 2rem;
+        }
+
+        @include atTabletsLandscape {
+            // typography
+            font-size: 2.25rem;
+        }
 
         small {
             // box model
@@ -58,19 +81,23 @@
             z-index: -1;
 
             // box model
-            height: 100px;
+            height: 90px;
             width: 70px;
 
             // visual
             border: 2px solid $mainOrange;
+
+            &atTabletsPortrait {
+                // box model
+                height: 100px;
+            }
         }
     }
 
     &__subtitle {
         // box model
-        display: inline-block;
-        padding-top: 10px;
-        vertical-align: top;
+        display: none;
+        margin: 0;
         width: 50%;
 
         // typography
@@ -78,5 +105,13 @@
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.4;
+
+        @include atTabletsPortrait {
+            // box model
+            display: inline-block;
+            vertical-align: bottom;
+            // padding-top: 10px;
+            width: 50%;
+        }
     }
 }

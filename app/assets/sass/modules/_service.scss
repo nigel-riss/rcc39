@@ -1,33 +1,59 @@
 .service {
     // box model
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+
     &__icon {
         // box model
-        float:left;
-        padding-top: 0.5em;
-        width: 64px;
+        float: left;
+        width: 30px;
+        padding-bottom: 10px;
+
+        @include atTabletsPortrait {
+            // box model
+            // float:left;
+            padding-top: 0.5em;
+            width: 64px;
+        }
     }
 
     &__description {
         // box model
-        padding-left: 89px;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-left: 89px;
+        }
     }
 
     &__title {
         // positioning
         position: relative;
 
+        // box model
+        margin-top: 0;
+        padding-left: 40px;
+        padding-bottom: 10px;
+
         // typography
         color: $copyDark;
         font-family: $captionFont;
-        font-size: 1.5rem;
+        font-size: 1rem;
+
+        @include atTabletsPortrait {
+            // box model
+            margin-top: 0.5em;
+            padding-left: 0;
+
+            // typography
+            font-size: 1.5rem;
+        }
 
         &::after {
             content: "";
 
             // positioning
             position: absolute;
-            left: 0;
+            left: 40px;
             bottom: -6px;
 
             // box model
@@ -43,11 +69,18 @@
         // box model
         margin: 0;
         padding: 0 1.125rem;
+        padding-right: 0;
     }
 
     &__item {
         // typography
-        font-size: 1.125rem;
+        font-size: 1rem;
+            // font-size: 1.125rem;
         line-height: 1.4;
+        
+        @include atTabletsPortrait{
+            // typography
+            font-size: 1.125rem;
+        }
     }
 }

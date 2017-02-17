@@ -5,7 +5,7 @@
 
     &__header {
         // box model
-        display: inline-block;
+        display: none;
         vertical-align: top;
         width: 50%;
         height: 80vh;
@@ -20,6 +20,11 @@
         background-image: url('../../assets/img/price-bg.jpg');
         background-position: center center;
         background-size: cover;
+
+        @include atDesktop {
+            // box model
+            display: inline-block;
+        }
     }
 
     &__title {
@@ -74,10 +79,15 @@
         // box model
         display: inline-block;
         vertical-align: top;
-        width: 50%;
-        height: 80vh;
+        width: 100%;
         min-height: 700px;
 
         // visual
+
+        @include atDesktop {
+            // box model
+            height: 80vh;
+            width: 50%;
+        }
     }
 }
