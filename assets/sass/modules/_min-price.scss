@@ -1,0 +1,54 @@
+.min-price {
+    &__title {
+        // box model
+        margin: 0;
+        padding-top: 50px;
+
+        // typography
+        color: $mainOrange;
+        font-family: $captionFont;
+        font-size: 2rem;
+    }
+
+    &__subtitle {
+        // positioning
+        position: relative;
+
+        // box model
+        margin: 0;
+        padding-top: 1em;
+
+        // typography
+        color: $copyLight;
+        font-family: $mainFont;
+        font-size: 1rem;
+        line-height: 1.6;
+
+        &::after {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+
+            // box model
+            height: 2px;
+            width: 20px;
+
+            // visual
+            background-color: $mainOrange;
+        }
+    }
+
+    &__price {
+        // box model
+        padding-top: 1em;
+
+        // typography
+        color: $copyDark;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

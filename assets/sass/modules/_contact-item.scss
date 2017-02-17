@@ -1,0 +1,62 @@
+.contact-item {
+    // box model
+    @include clearfix;
+    padding-bottom: 20px;
+
+    // typography
+    font-size: 0;
+
+    &__icon {
+        // box model
+        float: left;
+        width: 50px;
+    }
+
+    &__content {
+        // positioning
+        position: relative;
+        
+        // box model
+        padding-left: 95px;
+        padding-right: 20px;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 72px;
+            // top: 10px;
+
+            // box model
+            height: 25px;
+            height: 100%;
+            width: 2px;
+
+            // visual
+            background-color: $mainOrange;
+        }
+    }
+
+    &__title {
+        // typography
+        color: #aaaaaa;
+        font-family: $mainFont;
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    &__text {
+        // typography
+        color: #ffffff;
+        font-family: $mainFont;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        a {
+            // typography
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}

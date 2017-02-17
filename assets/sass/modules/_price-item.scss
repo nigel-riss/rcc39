@@ -5,7 +5,7 @@
     width: 50%;
     height: 40vh;
     min-height: 350px;
-    padding: 50px;
+    padding: 35px 50px;
 
     &--border-right {
         // visual
@@ -25,6 +25,12 @@
             // typography
             color: $copyBrown;
         }
+    }
+
+    &__icon {
+        // box model
+        width: 50px;
+        height: 80px;
     }
 
     &__title {

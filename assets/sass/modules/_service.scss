@@ -1,4 +1,17 @@
 .service {
+    // box model
+    padding-bottom: 20px;
+    &__icon {
+        // box model
+        float:left;
+        padding-top: 0.5em;
+        width: 64px;
+    }
+
+    &__description {
+        // box model
+        padding-left: 89px;
+    }
 
     &__title {
         // positioning
