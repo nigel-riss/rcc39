@@ -1,0 +1,34 @@
+.site-footer {
+    // box model
+    height: 700px;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    background-image: url("../../assets/img/footer-bg.jpg");
+    background-position: left top;
+    background-size: cover;
+
+    &__contacts {
+        // box model
+        float:left;
+        padding-top: 30px;
+        width: 400px;
+        // border: 1px solid red;
+    }
+
+    &__map {
+        float:left;
+        width: 400px;
+        border: 1px solid red;
+
+    }
+
+    &__feedback-form {
+        // box model
+        float:left;
+        padding-left: 30px;
+        width: 400px;
+    }
+}
