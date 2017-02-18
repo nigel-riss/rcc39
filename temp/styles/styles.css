@@ -549,6 +549,9 @@ html {
     font-size: 0.875rem;
     font-weight: 400;
     text-transform: uppercase; }
+    @media (min-width: 900px) {
+      .site-header__title {
+        padding-bottom: 40px; } }
     @media (min-width: 1200px) {
       .site-header__title {
         padding: 10px 0;
@@ -556,11 +559,16 @@ html {
         font-size: 2rem; } }
   .site-header__contacts {
     padding-top: 50px;
+    padding-right: 10px;
     color: #ffffff;
     text-align: right; }
     @media (min-width: 700px) {
       .site-header__contacts {
-        float: right; } }
+        float: right;
+        padding-top: 20px; } }
+    @media (min-width: 1200px) {
+      .site-header__contacts {
+        padding-top: 50px; } }
   .site-header__phone {
     padding-bottom: 5px;
     color: #ffffff;
@@ -584,6 +592,9 @@ html {
       .site-header__button {
         display: inline-block;
         font-size: 1.5rem; } }
+    @media (min-width: 900px) {
+      .site-header__button {
+        font-size: 1.25rem; } }
 
 .main-nav {
   margin: 0 auto; }
@@ -604,12 +615,19 @@ html {
     display: block;
     padding: 10px 30px;
     color: #2f2f2f;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.5rem;
-    text-transform: uppercase;
     font-family: "Intro", sans-serif;
     font-size: 1.25rem;
+    text-transform: uppercase;
     text-decoration: none; }
+    @media (min-width: 700px) {
+      .main-nav a {
+        padding: 10px 25px;
+        font-size: 1rem; } }
+    @media (min-width: 1200px) {
+      .main-nav a {
+        display: block;
+        padding: 10px 30px;
+        font-size: 1.25rem; } }
 
 .hero {
   padding: 40px 15px;
@@ -617,12 +635,19 @@ html {
   background-color: #f4eee0; }
   @media (min-width: 900px) {
     .hero {
-      padding: 100px 0;
+      padding: 60px 30px;
       background-image: url("../../assets/img/hero-bg.jpg");
       background-position: center center;
       background-size: cover; } }
+  @media (min-width: 1200px) {
+    .hero {
+      padding: 100px 0; } }
   .hero__content {
     margin: 0 auto; }
+    @media (min-width: 900px) {
+      .hero__content {
+        padding: 40px 30px;
+        background-color: rgba(249, 253, 32, 0.9); } }
     @media (min-width: 1200px) {
       .hero__content {
         position: relative;
@@ -645,7 +670,7 @@ html {
     position: relative;
     z-index: 1;
     padding: 0;
-    padding-left: 10px;
+    padding-left: 14px;
     margin: 0;
     color: #2f2f2f;
     font-family: "Intro", sans-serif;
@@ -659,7 +684,7 @@ html {
   .hero__list {
     padding: 0;
     margin: 30px 0;
-    padding-left: 30px; }
+    padding-left: 32px; }
   .hero__item {
     padding-bottom: 15px;
     color: #2f2f2f;
@@ -715,6 +740,10 @@ html {
   .site-section__header {
     padding-bottom: 60px;
     font-size: 0; }
+    @media (min-width: 700px) {
+      .site-section__header {
+        padding: 0 15px;
+        padding-bottom: 60px; } }
   .site-section__title {
     position: relative;
     z-index: 1;
@@ -763,10 +792,15 @@ html {
       .site-section__subtitle {
         display: inline-block;
         vertical-align: bottom;
+        padding-left: 30px;
         width: 50%; } }
 
 .service {
   padding-bottom: 40px; }
+  @media (min-width: 700px) {
+    .service {
+      padding: 0 15px;
+      padding-bottom: 40px; } }
   .service__icon {
     float: left;
     width: 30px;
@@ -1041,6 +1075,7 @@ html {
     .site-footer {
       margin-top: 200px; } }
   .site-footer__contacts {
+    padding-left: 10px;
     padding-top: 30px; }
     @media (min-width: 900px) {
       .site-footer__contacts {
@@ -1071,6 +1106,9 @@ html {
     clear: both;
     display: table;
     width: 100%; }
+  @media (min-width: 700px) {
+    .contact-item {
+      padding-left: 5px; } }
   .contact-item__icon {
     float: left;
     width: 40px; }
