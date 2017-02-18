@@ -230,6 +230,11 @@
 
         // visual
 
+        @include atTabletsLandscape{
+            // box model
+            padding-bottom: 40px;
+        }
+
         @include atDesktop {
             // box model
             padding: 10px 0;
@@ -243,6 +248,7 @@
     &__contacts {
         // box model
         padding-top: 50px;
+        padding-right: 10px;
 
         // typography
         color: #ffffff;
@@ -251,10 +257,12 @@
         @include atTabletsPortrait {
             // box model
             float: right;
+            padding-top: 20px;
         }
 
         @include atDesktop {
-
+            // box model
+            padding-top: 50px;
         }
     }
 
@@ -298,7 +306,8 @@
         }
 
         @include atTabletsLandscape {
-
+            // typography
+            font-size: 1.25rem;
         }
     }
 }

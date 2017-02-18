@@ -36,12 +36,26 @@
 
         // typography
         color: $copyDark;
-        font-family: $mainFont;
-        font-size: 1.5rem;
-        text-transform: uppercase;
         font-family: $captionFont;
         font-size: 1.25rem;
-
+        text-transform: uppercase;
         text-decoration: none;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 10px 25px;
+
+            // typography
+            font-size: 1rem;
+        }
+
+        @include atDesktop {
+            // box model
+            display: block;
+            padding: 10px 30px;
+
+            // typography
+            font-size: 1.25rem;
+        }
     }
 }

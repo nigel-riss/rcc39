@@ -2,6 +2,12 @@
     // box model
     padding-bottom: 40px;
 
+    @include atTabletsPortrait {
+        // box model
+        padding: 0 15px;
+        padding-bottom: 40px;
+    }
+
     &__icon {
         // box model
         float: left;

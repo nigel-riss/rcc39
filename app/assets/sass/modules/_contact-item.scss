@@ -6,6 +6,11 @@
     // typography
     font-size: 0;
 
+    @include atTabletsPortrait {
+        // box model
+        padding-left: 5px;
+    }
+
     &__icon {
         // box model
         float: left;

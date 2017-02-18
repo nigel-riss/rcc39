@@ -18,8 +18,14 @@
 
     &__contacts {
         // box model
+        padding-left: 10px; 
         padding-top: 30px;
         // border: 1px solid red;
+
+        @include atTabletsPortrait {
+            // box model
+            // padding-left: 20px;
+        }
 
         @include atTabletsLandscape {
             // box model
