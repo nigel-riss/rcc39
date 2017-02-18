@@ -439,7 +439,7 @@ html {
   background-image: url("../../assets/img/header-bg.jpg");
   background-position: center center;
   background-size: cover; }
-  @media (min-width: 900px) {
+  @media (min-width: 700px) {
     .site-header {
       padding-bottom: 0; } }
   .site-header__menu-content {
@@ -449,7 +449,7 @@ html {
     width: 100%;
     opacity: 0;
     background-color: rgba(249, 253, 32, 0.9); }
-    @media (min-width: 900px) {
+    @media (min-width: 700px) {
       .site-header__menu-content {
         position: relative;
         top: 0;
@@ -464,7 +464,7 @@ html {
     right: 15px;
     height: 24px;
     width: 24px; }
-    @media (min-width: 900px) {
+    @media (min-width: 700px) {
       .site-header__menu-icon {
         display: none; } }
     .site-header__menu-icon::before {
@@ -549,6 +549,9 @@ html {
     font-size: 0.875rem;
     font-weight: 400;
     text-transform: uppercase; }
+    @media (min-width: 700px) {
+      .site-header__title {
+        padding-bottom: 35px; } }
     @media (min-width: 900px) {
       .site-header__title {
         padding-bottom: 40px; } }
@@ -591,7 +594,7 @@ html {
     @media (min-width: 700px) {
       .site-header__button {
         display: inline-block;
-        font-size: 1.5rem; } }
+        font-size: 1.25rem; } }
     @media (min-width: 900px) {
       .site-header__button {
         font-size: 1.25rem; } }
@@ -608,7 +611,7 @@ html {
   .main-nav li {
     display: block;
     list-style: none; }
-    @media (min-width: 900px) {
+    @media (min-width: 700px) {
       .main-nav li {
         display: inline-block; } }
   .main-nav a {
@@ -621,7 +624,11 @@ html {
     text-decoration: none; }
     @media (min-width: 700px) {
       .main-nav a {
-        padding: 10px 25px;
+        padding: 10px 15px;
+        font-size: 0.9rem; } }
+    @media (min-width: 900px) {
+      .main-nav a {
+        padding: 10px 20px;
         font-size: 1rem; } }
     @media (min-width: 1200px) {
       .main-nav a {
@@ -633,6 +640,9 @@ html {
   padding: 40px 15px;
   overflow: hidden;
   background-color: #f4eee0; }
+  @media (min-width: 700px) {
+    .hero {
+      padding-top: 60px; } }
   @media (min-width: 900px) {
     .hero {
       padding: 60px 30px;
