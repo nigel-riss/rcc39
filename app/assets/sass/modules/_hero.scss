@@ -6,6 +6,11 @@
     overflow: hidden;
     background-color: #f4eee0;
 
+    @include atTabletsPortrait {
+        // box model
+        padding-top: 60px;
+    }
+
     @include atTabletsLandscape {
         // box model
         padding: 60px 30px;

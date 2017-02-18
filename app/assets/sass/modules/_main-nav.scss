@@ -23,7 +23,7 @@
         // visual
         list-style: none;
 
-        @include atTabletsLandscape {
+        @include atTabletsPortrait {
             // box model
             display: inline-block;
         }
@@ -43,7 +43,15 @@
 
         @include atTabletsPortrait {
             // box model
-            padding: 10px 25px;
+            padding: 10px 15px;
+
+            // typography
+            font-size: 0.9rem;
+        }
+
+        @include atTabletsLandscape {
+            // box model
+            padding: 10px 20px;
 
             // typography
             font-size: 1rem;
