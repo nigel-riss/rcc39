@@ -171,7 +171,7 @@
             padding-top: 50px;
 
             // typography
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         span {
@@ -199,11 +199,11 @@
             @include atDesktop {
                 // positioning
                 top: 30px;
-                left: -60px;
+                left: -50px;
 
                 // box model
                 height: 156px;
-                width: 129px;
+                width: 110px;
             }
         }
 
@@ -257,7 +257,7 @@
             padding-bottom: 40px;
 
             // typography
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -292,7 +292,7 @@
         font-size: 1.75rem;
 
         @include atDesktop {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
     }
 

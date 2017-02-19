@@ -24,7 +24,7 @@
 
     @include atDesktop {
         // box model
-        margin-top: 250px;
+        margin-top: 220px;
         padding: 100px 0;
     }
 
@@ -97,7 +97,7 @@
             padding: 0;
 
             // typography
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         // &::before {
@@ -158,7 +158,7 @@
 
         @include atDesktop {
             // typography
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
 
         strong {

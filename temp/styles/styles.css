@@ -528,7 +528,7 @@ html {
       .site-header__logo {
         padding-left: 0;
         padding-top: 50px;
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
     .site-header__logo span {
       color: #ffc527; }
     .site-header__logo::before {
@@ -544,9 +544,9 @@ html {
       @media (min-width: 1200px) {
         .site-header__logo::before {
           top: 30px;
-          left: -60px;
+          left: -50px;
           height: 156px;
-          width: 129px; } }
+          width: 110px; } }
   .site-header__title {
     margin: 0;
     padding-top: 10px;
@@ -566,7 +566,7 @@ html {
       .site-header__title {
         padding: 10px 0;
         padding-bottom: 40px;
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
   .site-header__contacts {
     padding-top: 50px;
     padding-right: 10px;
@@ -586,7 +586,7 @@ html {
     font-size: 1.75rem; }
     @media (min-width: 1200px) {
       .site-header__phone {
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
   .site-header__button {
     display: block;
     margin-top: 10px;
@@ -686,7 +686,7 @@ html {
       background-attachment: fixed; } }
   @media (min-width: 1200px) {
     .hero {
-      margin-top: 250px;
+      margin-top: 220px;
       padding: 100px 0; } }
   .hero__content {
     margin: 0 auto; }
@@ -726,7 +726,7 @@ html {
       .hero__title {
         margin: 0;
         padding: 0;
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
   .hero__list {
     padding: 0;
     margin: 30px 0;
@@ -740,7 +740,7 @@ html {
     line-height: 1.4; }
     @media (min-width: 1200px) {
       .hero__item {
-        font-size: 1.5rem; } }
+        font-size: 1.25rem; } }
     .hero__item strong {
       font-weight: 700; }
   .hero__order {
@@ -896,10 +896,13 @@ html {
   padding: 60px 0;
   text-align: center;
   background-color: #f9fd20;
-  background-image: url("../../assets/img/promo-bg.jpg"); }
+  background-image: url("../../assets/img/promo-bg.jpg");
+  background-size: cover;
+  background-position: center center; }
   @media (min-width: 1200px) {
     .promotion {
-      padding: 80px 0; } }
+      padding: 80px 0;
+      background-attachment: fixed; } }
   .promotion__title {
     padding-bottom: 0.5em;
     color: #6f1f1f;
@@ -909,7 +912,7 @@ html {
     text-transform: uppercase; }
     @media (min-width: 1200px) {
       .promotion__title {
-        font-size: 4.5rem; } }
+        font-size: 3rem; } }
   .promotion__text {
     color: #6f1f1f;
     font-family: "Open Sans", sans-serif;
@@ -917,7 +920,7 @@ html {
     line-height: 1.4; }
     @media (min-width: 1200px) {
       .promotion__text {
-        font-size: 3rem; } }
+        font-size: 2rem; } }
   .promotion__free {
     padding-top: 0.3em;
     color: #2f2f2f;
@@ -928,7 +931,7 @@ html {
     text-transform: uppercase; }
     @media (min-width: 1200px) {
       .promotion__free {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
 
 .price {
   font-size: 0; }
