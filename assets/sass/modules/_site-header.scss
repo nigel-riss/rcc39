@@ -11,10 +11,21 @@
     background-image: url('../../assets/img/header-bg.jpg');
     background-position: center center;
     background-size: cover;
+    box-shadow: 0 0 14px 0 rgba($bgDark, 0.7);
 
     @include atTabletsPortrait {
         // box model
         padding-bottom: 0;
+    }
+
+    @include atDesktop {
+        // positioning
+        position: fixed;
+        top: 0;
+        z-index: 11;
+
+        // box model
+        width: 100%;
     }
 
     &__menu-content {

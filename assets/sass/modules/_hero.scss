@@ -19,10 +19,12 @@
         background-image: url('../../assets/img/hero-bg.jpg');
         background-position: center center;
         background-size: cover;
+        background-attachment: fixed;
     }
 
     @include atDesktop {
         // box model
+        margin-top: 250px;
         padding: 100px 0;
     }
 
@@ -213,7 +215,9 @@
         @include atDesktop {
             // box model
             display: inline-block;
+            vertical-align: top;
             margin-left: 20px;
+            margin-top: -14px;
         }
 
         &::after {
