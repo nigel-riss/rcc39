@@ -469,8 +469,10 @@ html {
     position: absolute;
     top: 15px;
     right: 15px;
+    z-index: 11;
     height: 24px;
-    width: 24px; }
+    width: 24px;
+    cursor: pointer; }
     @media (min-width: 700px) {
       .site-header__menu-icon {
         display: none; } }
@@ -753,7 +755,6 @@ html {
         margin-right: -160px; } }
   .hero__button {
     display: block;
-    vertical-align: middle;
     padding: 10px;
     margin-top: 20px;
     color: #2f2f2f;

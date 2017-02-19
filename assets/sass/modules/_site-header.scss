@@ -63,10 +63,14 @@
         position: absolute;
         top: 15px;
         right: 15px;
+        z-index: 11;
 
         // box model
         height: 24px;
         width: 24px;
+
+        // visual
+        cursor: pointer;
 
         @include atTabletsPortrait {
             // box model
@@ -206,24 +210,6 @@
                 width: 110px;
             }
         }
-
-        // &::before {
-        //     content: "";
-
-        //     // positioning
-        //     position: absolute;
-        //     top: 30px;
-        //     left: -30px;
-        //     z-index: -1;
-
-        //     // box model
-        //     height: 160px;
-        //     width: 100px;
-
-        //     // visual
-        //     border: 5px solid $mainOrange;
-        //     border-right: none;
-        // }
     }
 
     &__title {
