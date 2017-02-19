@@ -438,10 +438,17 @@ html {
   background-color: #1e1e1e;
   background-image: url("../../assets/img/header-bg.jpg");
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  box-shadow: 0 0 14px 0 rgba(30, 30, 30, 0.7); }
   @media (min-width: 700px) {
     .site-header {
       padding-bottom: 0; } }
+  @media (min-width: 1200px) {
+    .site-header {
+      position: fixed;
+      top: 0;
+      z-index: 11;
+      width: 100%; } }
   .site-header__menu-content {
     position: absolute;
     top: 140px;
@@ -600,7 +607,8 @@ html {
         font-size: 1.25rem; } }
 
 .main-nav {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-size: 0; }
   @media (min-width: 1200px) {
     .main-nav {
       width: 1200px; } }
@@ -610,11 +618,14 @@ html {
     text-align: center; }
   .main-nav li {
     display: block;
+    margin: 0;
     list-style: none; }
     @media (min-width: 700px) {
       .main-nav li {
         display: inline-block; } }
   .main-nav a {
+    position: relative;
+    z-index: 0;
     display: block;
     padding: 10px 30px;
     color: #2f2f2f;
@@ -633,8 +644,31 @@ html {
     @media (min-width: 1200px) {
       .main-nav a {
         display: block;
-        padding: 10px 30px;
+        padding: 10px 35px;
         font-size: 1.25rem; } }
+    .main-nav a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      z-index: -1;
+      height: 2px;
+      width: 100%;
+      background-color: #2f2f2f;
+      transition: all 0.25s ease-out;
+      opacity: 0; }
+    .main-nav a:hover {
+      color: #f9fd20; }
+      .main-nav a:hover::before {
+        top: 0;
+        height: 100%;
+        opacity: 1; }
+    .main-nav a:active {
+      color: #f9fd20; }
+      .main-nav a:active::before {
+        top: 0;
+        height: 100%;
+        opacity: 1; }
 
 .hero {
   padding: 40px 15px;
@@ -648,9 +682,11 @@ html {
       padding: 60px 30px;
       background-image: url("../../assets/img/hero-bg.jpg");
       background-position: center center;
-      background-size: cover; } }
+      background-size: cover;
+      background-attachment: fixed; } }
   @media (min-width: 1200px) {
     .hero {
+      margin-top: 250px;
       padding: 100px 0; } }
   .hero__content {
     margin: 0 auto; }
@@ -733,7 +769,9 @@ html {
     @media (min-width: 1200px) {
       .hero__button {
         display: inline-block;
-        margin-left: 20px; } }
+        vertical-align: top;
+        margin-left: 20px;
+        margin-top: -14px; } }
     .hero__button::after {
       content: " +";
       color: #6f1f1f; }
