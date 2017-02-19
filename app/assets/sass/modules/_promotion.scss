@@ -8,10 +8,15 @@
     // visual
     background-color: $mainYellow;
     background-image: url('../../assets/img/promo-bg.jpg');
+    background-size: cover;
+    background-position: center center;
 
     @include atDesktop {
         // box model
         padding: 80px 0;
+
+        // visual
+        background-attachment: fixed;
     }
 
     &__title {
@@ -27,7 +32,7 @@
 
         @include atDesktop {
             // typography
-            font-size: 4.5rem;
+            font-size: 3rem;
         }
     }
 
@@ -40,7 +45,7 @@
 
         @include atDesktop {
             // typography
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 
@@ -58,7 +63,7 @@
 
         @include atDesktop {
             // typography
-            font-size: 5rem;
+            font-size: 4rem;
         }
     }
 }
