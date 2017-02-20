@@ -24,8 +24,14 @@
 
     @include atDesktop {
         // box model
-        margin-top: 220px;
+        // margin-top: 220px;
         padding: 100px 0;
+        padding-top: 320px;
+
+        &--compact {
+            // box model
+            margin-top: 160px;
+        }
     }
 
     &__content {
