@@ -6,14 +6,9 @@
     &__header {
         // box model
         display: none;
-        vertical-align: top;
-        width: 50%;
-        height: 80vh;
-        min-height: 700px;
-        padding-top: 300px;
 
         // typography
-        text-align: right;
+        text-align: center;
 
         // visual
         background-color: #a6a6a6;
@@ -24,6 +19,16 @@
         @include atDesktop {
             // box model
             display: inline-block;
+            vertical-align: top;
+            width: 40%;
+            height: 80vh;
+            min-height: 700px;
+            padding-top: 350px;
+        }
+
+        @include atDesktopLarge {
+            // box model
+            width: 50%;    
         }
     }
 
@@ -36,15 +41,18 @@
         display: inline-block;
         vertical-align: top;
         margin: 0;
-        padding: 0;
+        padding: 10px 30px;
         padding-left: 30px;
-        width: 600px;
+        // width: 600px;
 
         // typography
         color: #ffffff;
         font-family: $captionFont;
         font-size: 2.25rem;
         text-align: left;
+
+        // visual
+        background-color: rgba(0, 0, 0, 0.3);
 
         small {
             // box model
@@ -87,6 +95,11 @@
         @include atDesktop {
             // box model
             height: 80vh;
+            width: 60%;
+        }
+
+        @include atDesktopLarge {
+            // box model
             width: 50%;
         }
     }

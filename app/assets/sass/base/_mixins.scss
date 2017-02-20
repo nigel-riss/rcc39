@@ -24,6 +24,12 @@
     }
 }
 
+@mixin atDesktopLarge {
+    @media(min-width: 1400px) {
+        @content;
+    }
+}
+
 
 // clearfix
 

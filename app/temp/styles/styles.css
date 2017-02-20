@@ -774,8 +774,7 @@ html {
     text-align: center; }
     @media (min-width: 1200px) {
       .hero__order {
-        float: right;
-        margin-right: -160px; } }
+        text-align: left; } }
   .hero__button {
     display: block;
     padding: 10px;
@@ -961,32 +960,35 @@ html {
   font-size: 0; }
   .price__header {
     display: none;
-    vertical-align: top;
-    width: 50%;
-    height: 80vh;
-    min-height: 700px;
-    padding-top: 300px;
-    text-align: right;
+    text-align: center;
     background-color: #a6a6a6;
     background-image: url("../../assets/img/price-bg.jpg");
     background-position: center center;
     background-size: cover; }
     @media (min-width: 1200px) {
       .price__header {
-        display: inline-block; } }
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        height: 80vh;
+        min-height: 700px;
+        padding-top: 350px; } }
+    @media (min-width: 1400px) {
+      .price__header {
+        width: 50%; } }
   .price__title {
     position: relative;
     z-index: 1;
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    padding: 0;
+    padding: 10px 30px;
     padding-left: 30px;
-    width: 600px;
     color: #ffffff;
     font-family: "Intro", sans-serif;
     font-size: 2.25rem;
-    text-align: left; }
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3); }
     .price__title small {
       display: block;
       padding-bottom: 0.5em;
@@ -1010,6 +1012,9 @@ html {
     @media (min-width: 1200px) {
       .price__body {
         height: 80vh;
+        width: 60%; } }
+    @media (min-width: 1400px) {
+      .price__body {
         width: 50%; } }
 
 .price-item {
@@ -1028,6 +1033,10 @@ html {
   @media (min-width: 900px) {
     .price-item {
       padding: 35px 50px; } }
+  @media (min-width: 1200px) {
+    .price-item {
+      padding: 30px 40px;
+      padding-right: 20px; } }
   @media (min-width: 700px) {
     .price-item--border-right {
       border-right: 1px solid #e5e5e5; } }
@@ -1045,8 +1054,8 @@ html {
     @media (min-width: 700px) {
       .price-item__icon {
         float: none;
-        width: 50px;
-        height: 80px; } }
+        width: 40px;
+        height: 70px; } }
   .price-item__title {
     margin: 0;
     padding: 0;
@@ -1226,6 +1235,7 @@ html {
       text-decoration: none; }
 
 .feedback-form {
+  display: none;
   position: relative;
   top: 0;
   font-size: 0; }
