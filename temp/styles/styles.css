@@ -448,7 +448,9 @@ html {
       position: fixed;
       top: 0;
       z-index: 11;
-      width: 100%; } }
+      width: 100%; }
+      .site-header--compact {
+        padding-bottom: 0; } }
   .site-header__menu-content {
     position: absolute;
     top: 140px;
@@ -525,12 +527,16 @@ html {
     color: #ffffff;
     font-family: "Intro", sans-serif;
     font-size: 1.5rem;
-    font-weight: 400; }
+    font-weight: 400;
+    transition: all 0.3s ease-out; }
     @media (min-width: 1200px) {
       .site-header__logo {
         padding-left: 0;
         padding-top: 50px;
-        font-size: 1.5rem; } }
+        font-size: 1.5rem; }
+        .site-header--compact .site-header__logo {
+          padding-top: 30px;
+          font-size: 1rem; } }
     .site-header__logo span {
       color: #ffc527; }
     .site-header__logo::before {
@@ -542,13 +548,17 @@ html {
       height: 104px;
       width: 86px;
       background-image: url("../../assets/img/logo.svg");
-      background-repeat: no-repeat; }
+      background-repeat: no-repeat;
+      transition: all 0.3s ease-out; }
       @media (min-width: 1200px) {
         .site-header__logo::before {
           top: 30px;
           left: -50px;
           height: 156px;
-          width: 110px; } }
+          width: 110px; }
+          .site-header--compact .site-header__logo::before {
+            top: 10px;
+            width: 80px; } }
   .site-header__title {
     margin: 0;
     padding-top: 10px;
@@ -557,7 +567,8 @@ html {
     font-family: "Intro", sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: all 0.3s ease-out; }
     @media (min-width: 700px) {
       .site-header__title {
         padding-bottom: 35px; } }
@@ -568,7 +579,11 @@ html {
       .site-header__title {
         padding: 10px 0;
         padding-bottom: 40px;
-        font-size: 1.5rem; } }
+        font-size: 1.5rem; }
+        .site-header--compact .site-header__title {
+          padding: 5px 0;
+          padding-bottom: 27px;
+          font-size: 1rem; } }
   .site-header__contacts {
     padding-top: 50px;
     padding-right: 10px;
@@ -580,7 +595,7 @@ html {
         padding-top: 20px; } }
     @media (min-width: 1200px) {
       .site-header__contacts {
-        padding-top: 50px; } }
+        padding-top: 30px; } }
   .site-header__phone {
     padding-bottom: 5px;
     color: #ffffff;
@@ -588,7 +603,7 @@ html {
     font-size: 1.75rem; }
     @media (min-width: 1200px) {
       .site-header__phone {
-        font-size: 2.5rem; } }
+        font-size: 3rem; } }
   .site-header__button {
     display: block;
     margin-top: 10px;
@@ -599,7 +614,8 @@ html {
     font-size: 1.25rem;
     text-align: center;
     text-decoration: none;
-    background-color: #f9fd20; }
+    background-color: #f9fd20;
+    transition: all 0.3s ease-out; }
     @media (min-width: 700px) {
       .site-header__button {
         display: inline-block;
@@ -607,6 +623,11 @@ html {
     @media (min-width: 900px) {
       .site-header__button {
         font-size: 1.25rem; } }
+    @media (min-width: 1200px) {
+      .site-header--compact .site-header__button {
+        margin-bottom: -60px;
+        margin-top: -60px;
+        opacity: 0; } }
 
 .main-nav {
   margin: 0 auto;
@@ -688,8 +709,10 @@ html {
       background-attachment: fixed; } }
   @media (min-width: 1200px) {
     .hero {
-      margin-top: 220px;
-      padding: 100px 0; } }
+      padding: 100px 0;
+      padding-top: 320px; }
+      .hero--compact {
+        margin-top: 160px; } }
   .hero__content {
     margin: 0 auto; }
     @media (min-width: 900px) {

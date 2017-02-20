@@ -26,6 +26,11 @@
 
         // box model
         width: 100%;
+
+        &--compact {
+            // box model
+            padding-bottom: 0;
+        }
     }
 
     &__menu-content {
@@ -169,6 +174,9 @@
         font-size: 1.5rem;
         font-weight: 400;
 
+        // visual
+        transition: all 0.3s ease-out;
+
         @include atDesktop {
             // box model
             padding-left: 0;
@@ -176,6 +184,14 @@
 
             // typography
             font-size: 1.5rem;
+
+            .site-header--compact & {
+                // box model
+                padding-top: 30px;
+
+                // typography
+                font-size: 1rem;
+            }
         }
 
         span {
@@ -199,6 +215,7 @@
             // visual
             background-image: url('../../assets/img/logo.svg');
             background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
 
             @include atDesktop {
                 // positioning
@@ -208,6 +225,15 @@
                 // box model
                 height: 156px;
                 width: 110px;
+
+                .site-header--compact & {
+                    // positioning
+                    top: 10px;
+
+                    // box model
+                    // height: 100px;
+                    width: 80px;
+                }
             }
         }
     }
@@ -226,6 +252,7 @@
         text-transform: uppercase;
 
         // visual
+        transition: all 0.3s ease-out;
 
         @include atTabletsPortrait {
             // box model
@@ -244,6 +271,15 @@
 
             // typography
             font-size: 1.5rem;
+
+            .site-header--compact & {
+                // box model
+                padding: 5px 0;
+                padding-bottom: 27px;
+
+                // typography
+                font-size: 1rem;
+            }
         }
     }
 
@@ -264,7 +300,7 @@
 
         @include atDesktop {
             // box model
-            padding-top: 50px;
+            padding-top: 30px;
         }
     }
 
@@ -278,7 +314,7 @@
         font-size: 1.75rem;
 
         @include atDesktop {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     }
 
@@ -298,6 +334,7 @@
         
         // visual
         background-color: $mainYellow;
+        transition: all 0.3s ease-out;
 
         @include atTabletsPortrait {
             // box model
@@ -310,6 +347,20 @@
         @include atTabletsLandscape {
             // typography
             font-size: 1.25rem;
+        }
+
+        @include atDesktop {
+            .site-header--compact & {
+                // box model
+                margin-bottom: -60px;
+                margin-top: -60px;
+                // positioning
+                // position: absolute;
+                // top: -1000px;
+
+                // box model
+                opacity: 0;
+            }
         }
     }
 }
