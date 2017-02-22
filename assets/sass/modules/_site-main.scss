@@ -1,0 +1,6 @@
+.site-main {
+    @include atDesktop {
+        // box model
+        margin-top: 220px; 
+    }
+}

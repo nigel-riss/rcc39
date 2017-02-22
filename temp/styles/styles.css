@@ -693,6 +693,10 @@ html {
         height: 100%;
         opacity: 1; }
 
+@media (min-width: 1200px) {
+  .site-main {
+    margin-top: 220px; } }
+
 .hero {
   padding: 40px 15px;
   overflow: hidden;
@@ -709,10 +713,9 @@ html {
       background-attachment: fixed; } }
   @media (min-width: 1200px) {
     .hero {
+      margin-top: -220px;
       padding: 100px 0;
-      padding-top: 320px; }
-      .hero--compact {
-        margin-top: 160px; } }
+      padding-top: 320px; } }
   .hero__content {
     margin: 0 auto; }
     @media (min-width: 900px) {
@@ -1327,3 +1330,7 @@ html {
     text-transform: uppercase;
     background-color: #2f2f2f;
     cursor: pointer; }
+
+.price-table {
+  width: 100%;
+  border: 1px solid red; }
