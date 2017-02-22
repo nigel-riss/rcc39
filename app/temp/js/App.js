@@ -10362,25 +10362,22 @@ class SmoothScroll {
 class StickyHeader {
     constructor() {
         this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
-        this.headerTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".hero");
+        this.headerTrigger = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-main");
         this.createHeaderWaypoint();
-        console.log('constructor');
     }
 
     createHeaderWaypoint() {
-        console.log('waypoints');
         var self = this;
         new Waypoint({
             element: this.headerTrigger[0],
             handler: function(direction) {
-
-                console.log('scroll');
                 if (direction == "down") {
                     self.siteHeader.addClass("site-header--compact");
                 } else {
                     self.siteHeader.removeClass("site-header--compact");
                 }
-            }
+            },
+            offset: 50
         });
     }
 }

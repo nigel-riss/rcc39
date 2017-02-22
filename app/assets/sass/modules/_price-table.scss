@@ -1,7 +1,30 @@
 .price-table {
     // box model
     width: 100%;
+    border-collapse: collapse;
 
     // visual
-    border: 1px solid red;
+
+    td {
+        // box model
+        margin: 0;
+        padding: 5px 20px;
+
+        // typography
+        color: $copyDark;
+        font-family: $mainFont;
+        
+        // visual
+        border: 1px solid #eeeeee;
+        
+        &[colspan="4"] {
+            // typography
+            font-family: $captionFont;
+            font-size: 1rem;
+
+            // visual
+            background-color: #eeeeee;
+            // border: 1px solid $mainYellow;
+        }
+    }
 }
