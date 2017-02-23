@@ -1,0 +1,163 @@
+.order-form {
+    display: none;
+
+    // positioning
+    position: relative;
+    top: 0;
+
+    // typography
+    font-size: 0;
+
+    @include atTabletsLandscape {
+        // positioning
+        top: -112px;
+    }
+
+    &__header {
+        // positioning
+        position: relative;
+
+        // box model
+        padding: 30px 40px;
+        @include clearfix;
+
+        // visual
+        background-color: $mainYellow;
+
+        &::before {
+            content: "";
+
+            // positioning
+            position: absolute;
+            left: 110px;
+            top: 45px;
+
+            // box model
+            height: 22px;
+            width: 2px;
+
+            // visual
+            background-color: $copyBrown;
+        }
+    }
+
+    &__icon {
+        // box model
+        float: left;
+        width: 50px;
+    }
+
+    &__subtitle {
+        // box model
+        padding-bottom: 10px;
+        padding-left: 90px;
+        margin: 0;
+        
+        // typography
+        color: $copyDark;
+        font-family: $mainFont;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__title {
+        // box model
+        padding-left: 90px;
+        margin: 0;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+        font-size: 1.25rem;
+    }
+
+    &__fieldset {
+        // box model
+        display: block;
+        margin: 0;
+        padding: 40px;
+        padding-top: 10px;
+        // padding-bottom: 80px;
+        width: 100%;
+
+        // visual
+        background-color: #ffffff;
+        border: none;
+    }
+
+    &__input {
+        // box model
+        display: block;
+        margin-top: 10px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        width: 100%;
+        height: 64px;
+
+        // typography
+        font-size: 0.8125rem;
+
+        // visual
+        border: none;
+        border-bottom: 2px solid #e5e5e5;
+        transition: all 0.15s ease-out;
+
+        &:focus {
+            // typography
+            font-size: 1rem;
+            padding-bottom: 6px;
+            padding-top: 30px;
+
+            // visual
+            outline: none;
+        }
+    }
+
+    &__textarea {
+        // positioning
+        position: relative;
+        top: 40px;
+
+        // box model
+        display: block;
+        width: 100%;
+        height: 90px;
+
+        // typography
+        font-size: 0.8125rem;
+
+        // visual
+        border: none;
+        border-bottom: 2px solid #e5e5e5;
+        transition: all 0.15s ease-out;
+        resize: none;
+
+        &:focus {
+            // typography
+            font-size: 1rem;
+
+            // visual
+            outline: none;
+        }
+    }
+
+    &__submit {
+        // box model
+        display: block;
+        margin-top: 80px;
+        padding: 20px;
+        width: 100%;
+
+        // typography
+        color: #ffffff;
+        font-family: $captionFont;
+        font-size: 1rem;
+        line-height: 1.4;
+        text-align: center;
+        text-transform: uppercase;
+
+        // visual
+        background-color: $copyDark;
+        cursor: pointer;
+    }
+}
