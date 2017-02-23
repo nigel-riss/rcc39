@@ -1,17 +1,10 @@
 .order-form {
-    display: none;
-
     // positioning
     position: relative;
     top: 0;
 
     // typography
     font-size: 0;
-
-    @include atTabletsLandscape {
-        // positioning
-        top: -112px;
-    }
 
     &__header {
         // positioning

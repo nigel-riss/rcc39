@@ -19,7 +19,7 @@
             </div>
             <div class="site-header__contacts">
                 <div class="site-header__phone"><small>+7 (4012)</small> 40-39-00</div>
-                <!--<a class="site-header__button" href="">Оставить заявку +</a>-->
+                <a class="site-header__button" href="">Оставить заявку +</a>
             </div>
         </div>
         <!--<div class="site-header__menu-icon site-header__menu-icon--close-x">-->
@@ -30,10 +30,11 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="#top">Главная</a></li>
+                    <li><a class="special" href="#promo">Акция</a></li>
                     <li><a href="#services">Услуги</a></li>
                     <li><a href="#price">Прайс</a></li>`
-                    <!--<li><a href="#folio">Наши работы</a></li>-->
-                    <!--<li><a href="#feedback">Ваш отзыв</a></li>-->
+                    <li><a href="#folio">Наши работы</a></li>
+                    <li><a href="#feedback">Отзыв</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -53,12 +54,12 @@
                 </ol>
                 <div class="hero__order">
                     Данные мероприятия могут быть оказаны в комплексе или по отдельности
-                    <!--<a class="hero__button" href="">Оставить заявку</a>-->
+                    <a class="hero__button" href="">Оставить заявку</a>
                 </div>
             </div>
         </section>
 
-        <section class="promotion">
+        <section id="promo" class="promotion">
             <div class="wrapper">
                 <div class="promotion__title">
                     Акция!
@@ -186,7 +187,7 @@
                         </ul>
                     </div>
                 </div>
-                <!--<a class="button" href="">Оформить заявку </a>-->
+                <a class="button" href="">Оформить заявку </a>
             </div>
         </section>
         <section id="price" class="site-section  site-section--price">
@@ -289,7 +290,8 @@
                 </div>
             </div>
         </section>
-        <!--<section class="site-section site-section--grey">
+
+        <section class="site-section site-section--grey">
         <header class="site-section__header">
             <div class="wrapper">
                 <h2 class="site-section__title">
@@ -309,8 +311,9 @@
             <div class="gallery__item"></div>
             <div class="gallery__item"></div>
         </div>
-    </section>-->
+    </section>
     </main>
+
     <footer class="site-footer">
         <div class="wrapper">
             <div id="contacts" class="site-footer__contacts">
@@ -394,7 +397,7 @@
         </div>
     </footer>
 
-    <!--<div class="order-popup">-->
+    <div class="order-popup">
         <section class="site-section">
             <header class="site-section__header">
                 <div class="wrapper">
@@ -425,7 +428,7 @@
                         </div>
                         <div class="contact-item--order">
                             <div class="contact-item__icon">
-                                <img src="./assets/img/icons/clock.svg" alt="">
+                                <img src="./assets/img/icons/clock--orange.svg" alt="">
                             </div>
                             <div class="contact-item__content">
                                 <h3 class="contact-item__title">
@@ -438,7 +441,7 @@
                         </div>
                         <div class="contact-item--order">
                             <div class="contact-item__icon">
-                                <img src="./assets/img/icons/email.svg" alt="">
+                                <img src="./assets/img/icons/email--orange.svg" alt="">
                             </div>
                             <div class="contact-item__content">
                                 <h3 class="contact-item__title">
@@ -469,9 +472,9 @@
                             <fieldset class="order-form__fieldset">
                                 <input class="order-form__input" type="text" placeholder="Ваше Имя">
                                 <input class="order-form__input" type="email" placeholder="Электропочта">
-                                <input class="order-form__input" type="text" placeholder="Тема">
-                                <textarea class="order-form__textarea" name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
-                                <submit class="order-form__submit">Отправить сообщение</submit>
+                                <input class="order-form__input" type="tel" placeholder="Телефон">
+                                <textarea class="order-form__textarea" name="" id="" cols="30" rows="5" placeholder="Заявка"></textarea>
+                                <submit class="order-form__submit">Отправить заявку</submit>
                             </fieldset>
                         </form>
                     </div>

@@ -692,6 +692,9 @@ html {
         top: 0;
         height: 100%;
         opacity: 1; }
+    .main-nav a.special {
+      color: #ffffff;
+      background-color: #6f1f1f; }
 
 @media (min-width: 1200px) {
   .site-main {
@@ -786,6 +789,7 @@ html {
     font-family: "Intro", sans-serif;
     font-size: 1rem;
     text-decoration: none;
+    text-align: center;
     border: 5px solid #6f1f1f; }
     @media (min-width: 700px) {
       .hero__button {
@@ -1226,6 +1230,8 @@ html {
     @media (min-width: 700px) {
       .contact-item__title {
         font-size: 1.125rem; } }
+    .contact-item--order .contact-item__title {
+      color: #666666; }
   .contact-item__text {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -1237,9 +1243,12 @@ html {
     .contact-item__text a {
       color: #ffffff;
       text-decoration: none; }
+      .contact-item--order .contact-item__text a {
+        color: #2f2f2f; }
+    .contact-item--order .contact-item__text {
+      color: #2f2f2f; }
 
 .feedback-form {
-  display: none;
   position: relative;
   top: 0;
   font-size: 0; }
@@ -1333,7 +1342,6 @@ html {
     cursor: pointer; }
 
 .order-popup {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 99;
@@ -1341,17 +1349,24 @@ html {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7); }
 
-.order__contacts {
-  border: 1px solid red; }
+.order {
+  font-size: 0; }
+  .order::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%; }
+  .order__contacts {
+    float: left;
+    width: 35%; }
+  .order__form {
+    float: right;
+    width: 65%; }
 
 .order-form {
-  display: none;
   position: relative;
   top: 0;
   font-size: 0; }
-  @media (min-width: 900px) {
-    .order-form {
-      top: -112px; } }
   .order-form__header {
     position: relative;
     padding: 30px 40px;
