@@ -19,7 +19,7 @@ class StickyHeader {
                     self.siteHeader.removeClass("site-header--compact");
                 }
             },
-            offset: 50
+            offset: -100
         });
     }
 }
