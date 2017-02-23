@@ -86,7 +86,6 @@
             z-index: -1;
 
             // box model
-            // display: none;
             height: 2px;
             width: 100%;
 
@@ -126,6 +125,14 @@
                 // visual
                 opacity: 1;
             }
+        }
+
+        &.special {
+            color: #ffffff;
+            // visual
+            background-color: $copyBrown;
+            // border: 5px solid $mainOrange;
+            // padding: 5px 35px;
         }
     }
 }

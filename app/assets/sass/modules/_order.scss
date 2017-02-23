@@ -1,6 +1,18 @@
 .order {
+    // box model
+    @include clearfix;
+
+    // typography
+    font-size: 0;
+
     &__contacts {
-        // visual
-        border: 1px solid red;
+        float: left;
+        width: 35%;
+    }
+
+    &__form {
+        // box model
+        float: right;
+        width: 65%;
     }
 }
