@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*   
+Theme Name: RCC39
+Description: Special theme for rcc39.ru
+Author: Yuriy Kurenkov
+*/
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -616,6 +621,9 @@ html {
     text-decoration: none;
     background-color: #f9fd20;
     transition: all 0.3s ease-out; }
+    .site-header__button:hover {
+      color: #ffffff;
+      background-color: #2f2f2f; }
     @media (min-width: 700px) {
       .site-header__button {
         display: inline-block;
@@ -790,7 +798,11 @@ html {
     font-size: 1rem;
     text-decoration: none;
     text-align: center;
-    border: 5px solid #6f1f1f; }
+    border: 5px solid #6f1f1f;
+    transition: all 0.3s ease-out; }
+    .hero__button:hover {
+      color: #ffffff;
+      background-color: #6f1f1f; }
     @media (min-width: 700px) {
       .hero__button {
         margin: 0 auto;
@@ -979,7 +991,7 @@ html {
         vertical-align: top;
         width: 40%;
         height: 80vh;
-        min-height: 700px;
+        min-height: 800px;
         padding-top: 350px; } }
     @media (min-width: 1400px) {
       .price__header {
@@ -1030,11 +1042,13 @@ html {
   vertical-align: top;
   width: 100%;
   padding: 35px 20px;
-  border-bottom: 1px solid #f1f1f1; }
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  transition: all 0.3s ease-out; }
   @media (min-width: 700px) {
     .price-item {
       height: 40vh;
-      min-height: 350px;
+      min-height: 400px;
       width: 50%;
       padding: 35px 30px;
       border-bottom: none; } }
@@ -1055,6 +1069,9 @@ html {
     background-color: #f9fd20; }
     .price-item:hover .price-item__title {
       color: #6f1f1f; }
+    .price-item:hover .price-item__button {
+      left: 0;
+      opacity: 1; }
   .price-item__icon {
     float: left;
     padding-top: 6px;
@@ -1072,7 +1089,8 @@ html {
     color: #2f2f2f;
     font-family: "Intro", sans-serif;
     font-size: 1.125rem;
-    line-height: 1.4; }
+    line-height: 1.4;
+    transition: all 0.3s ease-out; }
     @media (min-width: 700px) {
       .price-item__title {
         padding-left: 0; } }
@@ -1094,6 +1112,22 @@ html {
     .price-item__table td:nth-child(2) {
       width: 35%;
       font-weight: 700; }
+  .price-item__button {
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: #2f2f2f;
+    font-family: "Intro", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #2f2f2f;
+    transition: opacity 0.3s linear 0.1s, left 0.3s linear 0s; }
+    @media (min-width: 1200px) {
+      .price-item__button {
+        left: -1000px;
+        opacity: 0; } }
 
 .button {
   display: block;
@@ -1106,7 +1140,10 @@ html {
   line-height: 1.4;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #ffc527; }
+  border: 2px solid #ffc527;
+  transition: all 0.3s ease-out; }
+  .button:hover {
+    background-color: #ffc527; }
   @media (min-width: 700px) {
     .button {
       width: 400px;
@@ -1160,6 +1197,7 @@ html {
 
 .site-footer {
   font-size: 0;
+  background-color: #334d62;
   background-image: url("../../assets/img/footer-bg.jpg");
   background-position: left top;
   background-size: cover; }
@@ -1332,14 +1370,19 @@ html {
     margin-top: 80px;
     padding: 20px;
     width: 100%;
-    color: #ffffff;
+    color: #2f2f2f;
     font-family: "Intro", sans-serif;
     font-size: 1rem;
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
-    background-color: #2f2f2f;
-    cursor: pointer; }
+    background-color: #ffc527;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border: none; }
+    .feedback-form__submit:hover {
+      color: #ffffff;
+      background-color: #2f2f2f; }
 
 .order-popup {
   top: 0;
@@ -1444,14 +1487,19 @@ html {
     margin-top: 80px;
     padding: 20px;
     width: 100%;
-    color: #ffffff;
+    color: #2f2f2f;
     font-family: "Intro", sans-serif;
     font-size: 1rem;
     line-height: 1.4;
     text-align: center;
     text-transform: uppercase;
-    background-color: #2f2f2f;
-    cursor: pointer; }
+    background-color: #ffc527;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out; }
+    .order-form__submit:hover {
+      color: #ffffff;
+      background-color: #2f2f2f; }
 
 .price-table {
   width: 100%;

@@ -7,11 +7,13 @@
     
     // visual
     border-bottom: 1px solid #f1f1f1;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
 
     @include atTabletsPortrait {
         // box model
         height: 40vh;
-        min-height: 350px;
+        min-height: 400px;
         width: 50%;
         padding: 35px 30px;
 
@@ -52,6 +54,14 @@
             // typography
             color: $copyBrown;
         }
+
+        & .price-item__button {
+            // positioning
+            left: 0;
+
+            // visual
+            opacity: 1;
+        }
     }
 
     &__icon {
@@ -80,6 +90,9 @@
         font-family: $captionFont;
         font-size: 1.125rem;
         line-height: 1.4;
+
+        // visual
+        transition: all 0.3s ease-out;
 
         @include atTabletsPortrait {
             // box model
@@ -121,6 +134,36 @@
 
             // typography
             font-weight: 700;
+        }
+    }
+
+    &__button {
+        // positioning
+        position: relative;
+
+        // box model
+        display: inline-block;
+
+        margin-top: 30px;
+        padding: 10px 20px;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        // visual
+        border: 1px solid $copyDark;
+        transition: opacity 0.3s linear 0.1s, left 0.3s linear 0s;
+
+        @include atDesktop {
+            // positioning
+            left: -1000px;
+
+            // visual
+            opacity: 0;
         }
     }
 }
