@@ -10305,6 +10305,7 @@ return jQuery;
 class MobileMenu {
     constructor() {
         this.siteHeader = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header");
+        this.menuLinks = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".main-nav a");
         this.menuIcon = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".site-header__menu-icon");
         this.menuContent = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.site-header__menu-content');
         this.events();
@@ -10312,12 +10313,18 @@ class MobileMenu {
 
     events() {
         this.menuIcon.click(this.toggleTheMenu.bind(this));
+        this.menuLinks.click(this.hideTheMenu.bind(this));
+        this.menuLinks.on('tap', this.hideTheMenu.bind(this));
     }
 
     toggleTheMenu() {
         this.menuContent.toggleClass("site-header__menu-content--is-visible");
         this.menuIcon.toggleClass("site-header__menu-icon--close-x");
-        console.log('web-pack here');
+    }
+
+    hideTheMenu() {
+        this.menuContent.removeClass('site-header__menu-content--is-visible');
+        this.menuIcon.removeClass("site-header__menu-icon--close-x");
     }
 }
 

@@ -16,6 +16,14 @@ gulp.task('watch', function() {
     watch('./app/assets/sass/**/*.scss', function() {
         gulp.start('cssInject');
     });
+
+    watch('./app/*.php', function() {
+        gulp.start('copyPHP');
+    });
+
+    watch('./app/temp/styles/styles.css', function() {
+        gulp.start('copyCSS');
+    });
 });
 
 

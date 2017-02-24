@@ -6,7 +6,7 @@
     <title>RCC39</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="temp/styles/styles.css">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             </div>
             <div class="site-header__contacts">
                 <div class="site-header__phone"><small>+7 (4012)</small> 40-39-00</div>
-                <a class="site-header__button" href="order.html">Оставить заявку +</a>
+                <a class="site-header__button" href="">Оставить заявку +</a>
             </div>
         </div>
         <!--<div class="site-header__menu-icon site-header__menu-icon--close-x">-->
@@ -32,8 +32,8 @@
                     <li><a href="#top">Главная</a></li>
                     <li><a class="special" href="#promo">Акция</a></li>
                     <li><a href="#services">Услуги</a></li>
-                    <li><a href="#price">Прайс</a></li>
-                    <!--<li><a href="#folio">Наши работы</a></li>-->
+                    <li><a href="#price">Прайс</a></li>`
+                    <li><a href="#folio">Наши работы</a></li>
                     <li><a href="#feedback">Отзыв</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
@@ -42,9 +42,6 @@
     </header>
 
     <main class="site-main">
-        <!--
-            Hero
-        -->
         <section id="hero" class="hero">
             <div class="hero__content">
                 <h2 class="hero__title">Комплекс мероприятий<br> для электроснабжения частного дома</h2>
@@ -57,14 +54,11 @@
                 </ol>
                 <div class="hero__order">
                     Данные мероприятия могут быть оказаны в комплексе или по отдельности
-                    <a class="hero__button" href="order.html">Оставить заявку</a>
+                    <a class="hero__button" href="">Оставить заявку</a>
                 </div>
             </div>
         </section>
 
-        <!--
-            Promo
-        -->
         <section id="promo" class="promotion">
             <div class="wrapper">
                 <div class="promotion__title">
@@ -78,10 +72,7 @@
                 </div>
             </div>
         </section>
-        
-        <!--
-            Services list
-        -->
+
         <section id="services" class="site-section  site-section--grey">
             <header class="site-section__header">
                 <div class="wrapper">
@@ -96,7 +87,7 @@
             <div class="wrapper">
                 <div class="service">
                     <div class="service__icon">
-                        <img src="./assets/img/icons/case.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/case.svg" alt="">
                     </div>
                     <div class="service__description">
                         <h3 class="service__title">
@@ -111,7 +102,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <img src="./assets//img/icons/docs.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>//img/icons/docs.svg" alt="">
                     </div>
                     <div class="service__description">
                         <h3 class="service__title">
@@ -132,7 +123,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <img src="./assets/img/icons/plier.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/plier.svg" alt="">
                     </div>
                     <div class="service__description">
                         <h3 class="service__title">
@@ -164,7 +155,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <img src="./assets/img/icons/documents.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/documents.svg" alt="">
                     </div>
                     <div class="service__description">
                         <h3 class="service__title">
@@ -179,7 +170,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon">
-                        <img src="./assets/img/icons/engineer.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/engineer.svg" alt="">
                     </div>
                     <div class="service__description">
                         <h3 class="service__title">Сдача работ</h3>
@@ -196,13 +187,9 @@
                         </ul>
                     </div>
                 </div>
-                <a class="button" href="order.html">Оформить заявку </a>
+                <a class="button" href="">Оформить заявку </a>
             </div>
         </section>
-
-        <!--
-            Price section
-        -->
         <section id="price" class="site-section  site-section--price">
             <header class="site-section__header">
                 <div class="wrapper">
@@ -214,7 +201,6 @@
                     </p>
                 </div>
             </header>
-
             <div class="price">
                 <div class="price__header">
                     <h2 class="price__title">
@@ -224,7 +210,7 @@
                 <div class="price__body">
                     <div class="price-item price-item--border-right">
                         <div class="price-item__icon">
-                            <img src="./assets/img/icons/documents.svg" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/documents.svg" alt="">
                         </div>
                         <h3 class="price-item__title">
                             Оформление документации
@@ -243,14 +229,10 @@
                                 <td>от 10 000 руб</td>
                             </tr>
                         </table>
-                        <a href="price.html" class="price-item__button">
-                            + Полный список услуг
-                        </a>
                     </div>
-
                     <div class="price-item">
                         <div class="price-item__icon">
-                            <img src="./assets/img/icons/power.svg" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/power.svg" alt="">
                         </div>
                         <h3 class="price-item__title">
                             Монтаж наружных сетей
@@ -269,14 +251,10 @@
                                 <td>от 70 руб/метр</td>
                             </tr>
                         </table>
-                        <a href="price.html" class="price-item__button">
-                            + Полный список услуг
-                        </a>
                     </div>
-
                     <div class="price-item price-item--border-right price-item--border-top">
                         <div class="price-item__icon">
-                            <img src="./assets/img/icons/socket.svg" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/socket.svg" alt="">
                         </div>
                         <h3 class="price-item__title">
                             Монтаж внутренних сетей
@@ -295,11 +273,7 @@
                                 <td>от 1200 руб</td>
                             </tr>
                         </table>
-                        <a href="price.html" class="price-item__button">
-                            + Полный список услуг
-                        </a>
                     </div>
-
                     <div class="price-item price-item--border-top">
                         <div class="min-price">
                             <h3 class="min-price__title">
@@ -317,41 +291,35 @@
             </div>
         </section>
 
-        <!--
-            Gallery section
-        -->
-        <!--<section class="site-section site-section--grey">
-            <header class="site-section__header">
-                <div class="wrapper">
-                    <h2 class="site-section__title">
-                        <small>Наши объекты</small>
-                        Портфолио
-                    </h2>
-                    <p class="site-section__subtitle">
-                        Примеры работ выполненых нашей компанией. Детальное описание и весь список объектов смотрите в нашей галерее
-                    </p>
-                </div>
-            </header>
-
-            <div class="gallery">
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
+        <section class="site-section site-section--grey">
+        <header class="site-section__header">
+            <div class="wrapper">
+                <h2 class="site-section__title">
+                    <small>Наши объекты</small>
+                    Портфолио
+                </h2>
+                <p class="site-section__subtitle">
+                    Примеры работ выполненых нашей компанией. Детальное описание и весь список объектов смотрите в нашей галерее
+                </p>
             </div>
-        </section>-->
+        </header>
+
+        <div class="gallery">
+            <div class="gallery__item"></div>
+            <div class="gallery__item"></div>
+            <div class="gallery__item"></div>
+            <div class="gallery__item"></div>
+            <div class="gallery__item"></div>
+        </div>
+    </section>
     </main>
 
-    <!--
-        Site footer
-    -->
     <footer class="site-footer">
         <div class="wrapper">
             <div id="contacts" class="site-footer__contacts">
                 <div class="contact-item">
                     <div class="contact-item__icon">
-                        <img src="./assets/img/icons/map.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/map.svg" alt="">
                     </div>
                     <div class="contact-item__content">
                         <h3 class="contact-item__title">
@@ -364,7 +332,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-item__icon">
-                        <img src="./assets/img/icons/clock.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock.svg" alt="">
                     </div>
                     <div class="contact-item__content">
                         <h3 class="contact-item__title">
@@ -377,7 +345,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-item__icon">
-                        <img src="./assets/img/icons/email.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/email.svg" alt="">
                     </div>
                     <div class="contact-item__content">
                         <h3 class="contact-item__title">
@@ -390,7 +358,7 @@
                 </div>
                 <div class="contact-item">
                     <div class="contact-item__icon">
-                        <img src="./assets/img/icons/phone.svg" alt="">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone.svg" alt="">
                     </div>
                     <div class="contact-item__content">
                         <h3 class="contact-item__title">
@@ -402,21 +370,13 @@
                     </div>
                 </div>
             </div>
-            
-            <!--
-                Map
-            -->
             <div class="site-footer__map">
             </div>
-
-            <!--
-                Feedback form
-            -->
             <div id="feedback" class="site-footer__feedback-form">
-                <form method="POST" action="https://formspree.io/rcc39@mail.ru" class="feedback-form">
+                <form action="" class="feedback-form">
                     <div class="feedback-form__header">
                         <div class="feedback-form__icon">
-                            <img src="./assets/img/icons/feedback.svg" alt="">
+                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/feedback.svg" alt="">
                         </div>
                         <div class="feedback-form__subtitle">
                             Форма обратной связи
@@ -425,22 +385,19 @@
                             Ваши отзывы
                         </h2>
                     </div>
-                    <div class="feedback-form__fieldset">
-                        <input class="feedback-form__input" type="text" name="name" placeholder="Ваше Имя">
-                        <input class="feedback-form__input" type="email" name="email" placeholder="Электропочта">
-                        <input class="feedback-form__input" type="text" name="topic" placeholder="Тема">
-                        <textarea class="feedback-form__textarea" name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
-                        <input type="submit" value="Отправить сообщение" class="feedback-form__submit">v</input>
-                    </div>
+                    <fieldset class="feedback-form__fieldset">
+                        <input class="feedback-form__input" type="text" placeholder="Ваше Имя">
+                        <input class="feedback-form__input" type="email" placeholder="Электропочта">
+                        <input class="feedback-form__input" type="text" placeholder="Тема">
+                        <textarea class="feedback-form__textarea" name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                        <submit class="feedback-form__submit">Отправить сообщение</submit>
+                    </fieldset>
                 </form>
             </div>
         </div>
     </footer>
 
-    <!--
-        Order popup
-    -->
-    <!--<div class="order-popup">
+    <div class="order-popup">
         <section class="site-section">
             <header class="site-section__header">
                 <div class="wrapper">
@@ -458,7 +415,7 @@
                      <div class="order__contacts">
                         <div class="contact-item--order">
                             <div class="contact-item__icon">
-                                <img src="./assets/img/icons/map--orange.svg" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/map--orange.svg" alt="">
                             </div>
                             <div class="contact-item__content">
                                 <h3 class="contact-item__title">
@@ -471,7 +428,7 @@
                         </div>
                         <div class="contact-item--order">
                             <div class="contact-item__icon">
-                                <img src="./assets/img/icons/clock--orange.svg" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock--orange.svg" alt="">
                             </div>
                             <div class="contact-item__content">
                                 <h3 class="contact-item__title">
@@ -484,7 +441,7 @@
                         </div>
                         <div class="contact-item--order">
                             <div class="contact-item__icon">
-                                <img src="./assets/img/icons/email--orange.svg" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/email--orange.svg" alt="">
                             </div>
                             <div class="contact-item__content">
                                 <h3 class="contact-item__title">
@@ -497,7 +454,7 @@
                         </div>
                         <div class="contact-item--order">
                             <div class="contact-item__icon">
-                                <img src="./assets/img/icons/phone--orange.svg" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone--orange.svg" alt="">
                             </div>
                             <div class="contact-item__content">
                                 <h3 class="contact-item__title">
@@ -525,7 +482,7 @@
             </div>
 
         </section>
-    </div>-->
+    </div>
 
     <script src="./temp/js/App.js"></script>
 </body>

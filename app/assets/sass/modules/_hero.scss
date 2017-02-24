@@ -209,6 +209,17 @@
 
         // visual
         border: 5px solid $copyBrown;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            // typography
+            color: #ffffff;
+
+            // visual
+            background-color: $copyBrown;
+            // background-color: $copyDark;
+            // border-color: $copyDark;
+        }
 
         @include atTabletsPortrait {
             // box model

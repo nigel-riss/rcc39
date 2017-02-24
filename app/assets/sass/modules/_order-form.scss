@@ -142,7 +142,7 @@
         width: 100%;
 
         // typography
-        color: #ffffff;
+        color: $copyDark;
         font-family: $captionFont;
         font-size: 1rem;
         line-height: 1.4;
@@ -150,7 +150,17 @@
         text-transform: uppercase;
 
         // visual
-        background-color: $copyDark;
+        background-color: $mainOrange;
+        border: none;
         cursor: pointer;
+        transition: all 0.3s ease-out;
+
+        &:hover {
+            // typography
+            color: #ffffff;
+
+            // visual
+            background-color: $copyDark;
+        }
     }
 }

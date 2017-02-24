@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <a id="top" href="#"></a>
     <header id="site-header" class="site-header">
         <div class="wrapper">
             <div class="site-header__logo-n-title">
@@ -19,7 +18,7 @@
             </div>
             <div class="site-header__contacts">
                 <div class="site-header__phone"><small>+7 (4012)</small> 40-39-00</div>
-                <!--<a class="site-header__button" href="">Оставить заявку +</a>-->
+                <a class="site-header__button" href="order.html">Оставить заявку +</a>
             </div>
         </div>
         <!--<div class="site-header__menu-icon site-header__menu-icon--close-x">-->
@@ -29,11 +28,12 @@
         <div class="site-header__menu-content">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#top">Главная</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#price">Прайс</a></li>
+                    <li><a href="index.html#top">Главная</a></li>
+                    <li><a class="special" href="index.html#promo">Акция</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#price">Прайс</a></li>
                     <!--<li><a href="#folio">Наши работы</a></li>-->
-                    <!--<li><a href="#feedback">Ваш отзыв</a></li>-->
+                    <li><a href="#feedback">Отзыв</a></li>
                     <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
@@ -1830,6 +1830,10 @@
         </section>
         
     </main>
+
+    <!--
+        Footer
+    -->
     <footer class="site-footer">
         <div class="wrapper">
             <div id="contacts" class="site-footer__contacts">
@@ -1886,10 +1890,18 @@
                     </div>
                 </div>
             </div>
+            
+            <!--
+                Map
+            -->
             <div class="site-footer__map">
             </div>
+
+            <!--
+                Feedback form
+            -->
             <div id="feedback" class="site-footer__feedback-form">
-                <form action="" class="feedback-form">
+                <form method="POST" action="https://formspree.io/rcc39@mail.ru" class="feedback-form">
                     <div class="feedback-form__header">
                         <div class="feedback-form__icon">
                             <img src="./assets/img/icons/feedback.svg" alt="">
@@ -1901,17 +1913,18 @@
                             Ваши отзывы
                         </h2>
                     </div>
-                    <fieldset class="feedback-form__fieldset">
-                        <input class="feedback-form__input" type="text" placeholder="Ваше Имя">
-                        <input class="feedback-form__input" type="email" placeholder="Электропочта">
-                        <input class="feedback-form__input" type="text" placeholder="Тема">
-                        <textarea class="feedback-form__textarea" name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
-                        <submit class="feedback-form__submit">Отправить сообщение</submit>
-                    </fieldset>
+                    <div class="feedback-form__fieldset">
+                        <input class="feedback-form__input" type="text" name="name" placeholder="Ваше Имя">
+                        <input class="feedback-form__input" type="email" name="email" placeholder="Электропочта">
+                        <input class="feedback-form__input" type="text" name="topic" placeholder="Тема">
+                        <textarea class="feedback-form__textarea" name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                        <input type="submit" value="Отправить сообщение" class="feedback-form__submit">v</input>
+                    </div>
                 </form>
             </div>
         </div>
     </footer>
+
     <script src="./temp/js/App.js"></script>
 </body>
 
