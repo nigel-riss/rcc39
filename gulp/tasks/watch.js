@@ -24,6 +24,10 @@ gulp.task('watch', function() {
     watch('./app/temp/styles/styles.css', function() {
         gulp.start('copyCSS');
     });
+
+    watch('./app/temp/js/App.js', function() {
+        gulp.start('copyJS');
+    });
 });
 
 

@@ -15,3 +15,8 @@ gulp.task('copyCSS', function() {
         }))
         .pipe(gulp.dest('G:/_xampp/htdocs/rcc39/wp-content/themes/rcc39/'));
 });
+
+gulp.task('copyJS', function() {
+    gulp.src('./app/temp/js/App.js')
+        .pipe(gulp.dest('G:/_xampp/htdocs/rcc39/wp-content/themes/rcc39/'));
+});

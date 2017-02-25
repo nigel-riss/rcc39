@@ -1,45 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <title>RCC39</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
-</head>
-
-<body>
-    <a id="top" href="#"></a>
-    <header id="site-header" class="site-header">
-        <div class="wrapper">
-            <div class="site-header__logo-n-title">
-                <div class="site-header__logo">RCC<span>39</span></div>
-                <h1 class="site-header__title">Электроснабжение<br> частных домов под ключ</h1>
-            </div>
-            <div class="site-header__contacts">
-                <div class="site-header__phone"><small>+7 (4012)</small> 40-39-00</div>
-                <a class="site-header__button" href="">Оставить заявку +</a>
-            </div>
-        </div>
-        <!--<div class="site-header__menu-icon site-header__menu-icon--close-x">-->
-        <div class="site-header__menu-icon">
-            <div class="site-header__menu-icon__middle"></div>
-        </div>
-        <div class="site-header__menu-content">
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#top">Главная</a></li>
-                    <li><a class="special" href="#promo">Акция</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#price">Прайс</a></li>`
-                    <li><a href="#folio">Наши работы</a></li>
-                    <li><a href="#feedback">Отзыв</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<?php
+    get_header();
+?>
 
     <main class="site-main">
         <section id="hero" class="hero">
@@ -54,7 +15,7 @@
                 </ol>
                 <div class="hero__order">
                     Данные мероприятия могут быть оказаны в комплексе или по отдельности
-                    <a class="hero__button" href="">Оставить заявку</a>
+                    <a class="hero__button" href="<?php echo esc_url(home_url('/')); ?>/order">Оставить заявку</a>
                 </div>
             </div>
         </section>
@@ -187,9 +148,14 @@
                         </ul>
                     </div>
                 </div>
-                <a class="button" href="">Оформить заявку </a>
+                <a class="button" href="<?php echo esc_url(home_url('/')); ?>/order">Оформить заявку </a>
             </div>
         </section>
+
+
+        <!--
+            Price section
+        -->
         <section id="price" class="site-section  site-section--price">
             <header class="site-section__header">
                 <div class="wrapper">
@@ -201,6 +167,7 @@
                     </p>
                 </div>
             </header>
+
             <div class="price">
                 <div class="price__header">
                     <h2 class="price__title">
@@ -229,7 +196,11 @@
                                 <td>от 10 000 руб</td>
                             </tr>
                         </table>
+                        <a href="<?php echo esc_url(home_url('/')); ?>/price" class="price-item__button">
+                            + Полный список услуг
+                        </a>
                     </div>
+
                     <div class="price-item">
                         <div class="price-item__icon">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/power.svg" alt="">
@@ -251,7 +222,11 @@
                                 <td>от 70 руб/метр</td>
                             </tr>
                         </table>
+                        <a href="<?php echo esc_url(home_url('/')); ?>/price" class="price-item__button">
+                            + Полный список услуг
+                        </a>
                     </div>
+
                     <div class="price-item price-item--border-right price-item--border-top">
                         <div class="price-item__icon">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/socket.svg" alt="">
@@ -273,7 +248,11 @@
                                 <td>от 1200 руб</td>
                             </tr>
                         </table>
+                        <a href="<?php echo esc_url(home_url('/')); ?>/price" class="price-item__button">
+                            + Полный список услуг
+                        </a>
                     </div>
+
                     <div class="price-item price-item--border-top">
                         <div class="min-price">
                             <h3 class="min-price__title">
@@ -291,27 +270,31 @@
             </div>
         </section>
 
+        <!--
+            Portfolio
+        -->
         <section class="site-section site-section--grey">
-        <header class="site-section__header">
-            <div class="wrapper">
-                <h2 class="site-section__title">
-                    <small>Наши объекты</small>
-                    Портфолио
-                </h2>
-                <p class="site-section__subtitle">
-                    Примеры работ выполненых нашей компанией. Детальное описание и весь список объектов смотрите в нашей галерее
-                </p>
-            </div>
-        </header>
+            <header class="site-section__header">
+                <div class="wrapper">
+                    <h2 class="site-section__title">
+                        <small>Наши объекты</small>
+                        Портфолио
+                    </h2>
+                    <p class="site-section__subtitle">
+                        Примеры работ выполненых нашей компанией. Детальное описание и весь список объектов смотрите в нашей галерее
+                    </p>
+                </div>
+            </header>
 
-        <div class="gallery">
-            <div class="gallery__item"></div>
-            <div class="gallery__item"></div>
-            <div class="gallery__item"></div>
-            <div class="gallery__item"></div>
-            <div class="gallery__item"></div>
-        </div>
-    </section>
+            <div class="gallery">
+                <?php echo photo_gallery(6); ?>
+                <div class="gallery__item"></div>
+                <div class="gallery__item"></div>
+                <div class="gallery__item"></div>
+                <div class="gallery__item"></div>
+                <div class="gallery__item"></div>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -397,94 +380,8 @@
         </div>
     </footer>
 
-    <div class="order-popup">
-        <section class="site-section">
-            <header class="site-section__header">
-                <div class="wrapper">
-                    <h2 class="site-section__title">
-                        <small>Свяжитесь с нами</small>Оставить заявку
-                    </h2>
-                    <p class="site-section__subtitle">
-                        Оставьте заявку с вашими контактными данными и описанием интересующих вас услуг и наш менеджер свяжется с вами.
-                    </p>
-                </div>
-            </header>
-
-            <div class="wrapper">
-                <div class="order">
-                     <div class="order__contacts">
-                        <div class="contact-item--order">
-                            <div class="contact-item__icon">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/map--orange.svg" alt="">
-                            </div>
-                            <div class="contact-item__content">
-                                <h3 class="contact-item__title">
-                                    Схема проезда
-                                </h3>
-                                <p class="contact-item__text">
-                                    г. Калининград, ул. Больничная 42, БЦ «Альянс-2» 3 этаж, офис 35
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-item--order">
-                            <div class="contact-item__icon">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock--orange.svg" alt="">
-                            </div>
-                            <div class="contact-item__content">
-                                <h3 class="contact-item__title">
-                                    Часы работы
-                                </h3>
-                                <p class="contact-item__text">
-                                    Пн-Пт: 9<sup>00</sup> – 18<sup>00</sup>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-item--order">
-                            <div class="contact-item__icon">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/email--orange.svg" alt="">
-                            </div>
-                            <div class="contact-item__content">
-                                <h3 class="contact-item__title">
-                                    Электропочта
-                                </h3>
-                                <p class="contact-item__text">
-                                    <a href="mailto:rcc39@mail.ru">rcc39@mail.ru</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-item--order">
-                            <div class="contact-item__icon">
-                                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone--orange.svg" alt="">
-                            </div>
-                            <div class="contact-item__content">
-                                <h3 class="contact-item__title">
-                                    Телефон
-                                </h3>
-                                <p class="contact-item__text">
-                                    <a href="tel:+74012403900">+7 (4012) 40–39–00</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="order__form">
-                        <form action="" class="order-form">
-                            <fieldset class="order-form__fieldset">
-                                <input class="order-form__input" type="text" placeholder="Ваше Имя">
-                                <input class="order-form__input" type="email" placeholder="Электропочта">
-                                <input class="order-form__input" type="tel" placeholder="Телефон">
-                                <textarea class="order-form__textarea" name="" id="" cols="30" rows="5" placeholder="Заявка"></textarea>
-                                <submit class="order-form__submit">Отправить заявку</submit>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
-    <script src="./temp/js/App.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri()?>/App.js"></script>
+    <?php wp_footer(); ?>
 </body>
 
 </html>
