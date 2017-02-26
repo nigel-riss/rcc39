@@ -6,13 +6,24 @@
     font-size: 0;
 
     &__contacts {
-        float: left;
-        width: 35%;
+        // box model
+        display: none;
+
+        @include atTabletsLandscape {
+            // box model
+            display: block;
+            float: left;
+            padding-top: 20px;
+            padding-left: 20px;
+            width: 35%;
+        }
     }
 
     &__form {
-        // box model
-        float: right;
-        width: 65%;
+        @include atTabletsLandscape {
+            // box model
+            float: right;
+            width: 65%;
+        }
     }
 }

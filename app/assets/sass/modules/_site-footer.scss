@@ -1,28 +1,25 @@
 .site-footer {
-    // box model
-    // height: 700px;
-    // margin-top: 200px;
-
     // typography
     font-size: 0;
 
     // visual
     background-color: #334d62;
-    background-image: url("../../assets/img/footer-bg.jpg");
+    // background-image: url("../../assets/img/footer-bg.jpg");
     background-position: left top;
     background-size: cover;
-    // background-attachment: fixed;
 
     @include atTabletsLandscape {
         // box model
-        margin-top: 200px;
+        // margin-top: 200px;
+
+        // visual
+        background-image: url("../../assets/img/footer-bg.jpg");
     }
 
     &__contacts {
         // box model
         padding-left: 10px; 
         padding-top: 30px;
-        // border: 1px solid red;
 
         @include atTabletsPortrait {
             // box model
@@ -37,6 +34,9 @@
         }
 
         @include atDesktop {
+            // box model
+            padding-left: 10px;
+            width: 370px;
         }
     }
 
@@ -45,13 +45,40 @@
        display: none;
 
         @include atDesktop {
+            // positioning
+            position: relative;
+
             // box model
             display: block;
             float:left;
+            padding-top: 30px;
             width: 400px;
             border: 1px solid transparent;
+
+            // typography
+            text-align: center;
+
+            &::before {
+                content: "";
+
+                // positioning
+                position: absolute;
+
+                // box model
+                height: 360px;
+                width: 360px;
+                top: 40px;
+                left: 10px;
+
+                // visual
+                border: 2px solid $mainOrange;
+            }
         }
 
+        img {
+            // box model
+            display: inline-block;
+        }
     }
 
     &__feedback-form {
@@ -65,11 +92,11 @@
             width: 400px;
         }
 
-        // @include atDesktop {
-        //     // box model
-        //     float:right;
-        //     padding-left: 30px;
-        //     width: 400px;
-        // }
+        @include atDesktop {
+            // box model
+            float:right;
+            padding-left: 10px;
+            width: 390px;
+        }
     }
 }

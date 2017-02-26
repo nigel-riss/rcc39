@@ -68,6 +68,10 @@
 
             // visual
             background-color: $mainOrange;
+
+            @include atTabletsPortrait {
+                left: 0;
+            }
         }
     }
 

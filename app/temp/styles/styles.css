@@ -923,6 +923,9 @@ html {
       height: 2px;
       width: 20px;
       background-color: #ffc527; }
+      @media (min-width: 700px) {
+        .service__title::after {
+          left: 0; } }
   .service__list {
     margin: 0;
     padding: 0 1.125rem;
@@ -1123,6 +1126,9 @@ html {
     text-transform: uppercase;
     border: 1px solid #2f2f2f;
     transition: opacity 0.3s linear 0.1s, left 0.3s linear 0s; }
+    .price-item__button:hover {
+      color: #ffffff;
+      background-color: #2f2f2f; }
     @media (min-width: 1200px) {
       .price-item__button {
         left: -1000px;
@@ -1197,12 +1203,11 @@ html {
 .site-footer {
   font-size: 0;
   background-color: #334d62;
-  background-image: url("../../assets/img/footer-bg.jpg");
   background-position: left top;
   background-size: cover; }
   @media (min-width: 900px) {
     .site-footer {
-      margin-top: 200px; } }
+      background-image: url("../../assets/img/footer-bg.jpg"); } }
   .site-footer__contacts {
     padding-left: 10px;
     padding-top: 30px; }
@@ -1211,14 +1216,31 @@ html {
         float: left;
         margin-left: 20px;
         width: 400px; } }
+    @media (min-width: 1200px) {
+      .site-footer__contacts {
+        padding-left: 10px;
+        width: 370px; } }
   .site-footer__map {
     display: none; }
     @media (min-width: 1200px) {
       .site-footer__map {
+        position: relative;
         display: block;
         float: left;
+        padding-top: 30px;
         width: 400px;
-        border: 1px solid transparent; } }
+        border: 1px solid transparent;
+        text-align: center; }
+        .site-footer__map::before {
+          content: "";
+          position: absolute;
+          height: 360px;
+          width: 360px;
+          top: 40px;
+          left: 10px;
+          border: 2px solid #ffc527; } }
+    .site-footer__map img {
+      display: inline-block; }
   .site-footer__feedback-form {
     margin: 0 -15px; }
     @media (min-width: 900px) {
@@ -1226,6 +1248,11 @@ html {
         float: right;
         margin-right: 20px;
         width: 400px; } }
+    @media (min-width: 1200px) {
+      .site-footer__feedback-form {
+        float: right;
+        padding-left: 10px;
+        width: 390px; } }
 
 .contact-item {
   padding-bottom: 20px;
@@ -1268,7 +1295,7 @@ html {
       .contact-item__title {
         font-size: 1.125rem; } }
     .contact-item--order .contact-item__title {
-      color: #666666; }
+      color: #ffc527; }
   .contact-item__text {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -1399,11 +1426,18 @@ html {
     display: table;
     width: 100%; }
   .order__contacts {
-    float: left;
-    width: 35%; }
-  .order__form {
-    float: right;
-    width: 65%; }
+    display: none; }
+    @media (min-width: 900px) {
+      .order__contacts {
+        display: block;
+        float: left;
+        padding-top: 20px;
+        padding-left: 20px;
+        width: 35%; } }
+  @media (min-width: 900px) {
+    .order__form {
+      float: right;
+      width: 65%; } }
 
 .order-form {
   position: relative;
@@ -1514,3 +1548,42 @@ html {
       font-family: "Intro", sans-serif;
       font-size: 1rem;
       background-color: #eeeeee; }
+
+.footer-logo {
+  padding: 20px;
+  color: #ffffff;
+  font-family: "Intro", sans-serif;
+  font-size: 2rem;
+  text-align: center; }
+  @media (min-width: 700px) {
+    .footer-logo {
+      display: inline-block;
+      vertical-align: top;
+      width: 40%;
+      text-align: left; } }
+  @media (min-width: 900px) {
+    .footer-logo {
+      width: calc(100% - 400px); } }
+  .footer-logo span {
+    color: #ffc527; }
+
+.footer-copyrights {
+  padding-bottom: 20px;
+  color: #f6f6f6;
+  font-size: 0.875rem;
+  text-align: center;
+  line-height: 1.6; }
+  @media (min-width: 700px) {
+    .footer-copyrights {
+      display: inline-block;
+      vertical-align: top;
+      padding: 17px 0;
+      padding-right: 20px;
+      width: 60%;
+      text-align: right; } }
+  @media (min-width: 900px) {
+    .footer-copyrights {
+      width: 400px;
+      text-align: center; } }
+  .footer-copyrights span {
+    color: #ffc527; }

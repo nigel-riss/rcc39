@@ -1,0 +1,30 @@
+.footer-logo {
+    // box model
+    padding: 20px;
+
+    // typography
+    color: #ffffff;
+    font-family: $captionFont;
+    font-size: 2rem;
+    text-align: center;
+
+    @include atTabletsPortrait {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+
+        // typography
+        text-align: left;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        width: calc(100% - 400px);
+    }
+
+    span {
+        // typography
+        color: $mainOrange;
+    }
+}

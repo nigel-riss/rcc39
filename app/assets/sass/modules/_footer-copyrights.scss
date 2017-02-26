@@ -1,0 +1,33 @@
+.footer-copyrights {
+    // box model
+    padding-bottom: 20px;
+
+    // typography
+    color: $bgLightGrey;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.6;
+
+    @include atTabletsPortrait {
+        // box model
+        display: inline-block;
+        vertical-align: top;
+        padding: 17px 0;
+        padding-right: 20px;
+        width: 60%;
+        text-align: right;
+    }
+
+    @include atTabletsLandscape {
+        // box model
+        width: 400px;
+
+        // typography
+        text-align: center;
+    }
+
+    span {
+        // typography
+        color: $mainOrange;
+    }
+}
