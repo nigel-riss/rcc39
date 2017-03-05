@@ -87,6 +87,11 @@
             color: #ffffff;
             text-decoration: none;
 
+            &:hover {
+                // typography
+                text-decoration: underline;
+            }
+
             .contact-item--order & {
                 // typography
                 color: $copyDark;

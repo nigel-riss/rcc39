@@ -1,19 +1,32 @@
 .price-table {
+    // positioning
+    position: relative;
+    
     // box model
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 40px;
 
     // visual
 
     td {
         // box model
         margin: 0;
-        padding: 3px 20px;
+        padding: 1px 5px;
 
         // typography
         color: $copyDark;
         font-family: $mainFont;
+        font-size: 0.75rem;
         line-height: 1.4;
+
+        @include atTabletsPortrait {
+            // box model
+            padding: 3px 20px;
+
+            // typography
+            font-size: 1rem;
+        }
         
         // visual
         border: 1px solid #eeeeee;
@@ -21,11 +34,28 @@
         &[colspan="4"] {
             // typography
             font-family: $captionFont;
-            font-size: 1rem;
 
             // visual
             background-color: #eeeeee;
             // border: 1px solid $mainYellow;
+        }
+    }
+
+    caption {
+        // box model
+        padding-bottom: 10px;
+
+        // typography
+        color: $copyBrown;
+        font-family: $captionFont;
+        font-size: 1rem;
+
+        @include atTabletsPortrait {
+            // box model
+            padding-bottom: 20px;
+
+            // typography
+            font-size: 1.5rem;
         }
     }
 }

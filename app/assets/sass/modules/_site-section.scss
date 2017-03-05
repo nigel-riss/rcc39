@@ -1,4 +1,7 @@
 .site-section {
+    // positioning
+    position:relative;
+    
     // box model
     padding: 60px 0;
 
@@ -8,6 +11,40 @@
     @include atDesktop {
         // box model
         padding: 100px 0;
+    }
+
+    h2 {
+        // box model
+        padding-top: 1em;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+    }
+
+    h3 {
+        // box model
+        padding-top: 1em;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+    }
+
+    h4 {
+        // box model
+        padding-top: 1em;
+
+        // typography
+        color: $copyDark;
+    }
+
+    p {
+        // typography
+        color: $copyDark;
+        font-family: $mainFont;
+        font-weight: 400;
+        line-height: 1.4;
     }
 
     &--grey {
@@ -48,7 +85,7 @@
         vertical-align: top;
         margin: 0;
         padding: 0;
-        padding-left: 30px;
+        padding-left: 40px;
         width: 100%;
 
         // typography
@@ -86,20 +123,27 @@
 
             // positioning
             position: absolute;
-            top: -20px;
-            left: 0;
+            top: -30px;
+            left: 0px;
             z-index: -1;
 
             // box model
-            height: 90px;
-            width: 70px;
+            height: 104px;
+            width: 86px;
 
             // visual
-            border: 2px solid $mainOrange;
+            background-image: url('../../assets/img/logo.svg');
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
 
-            &atTabletsPortrait {
-                // box model
-                height: 100px;
+            @include atTabletsPortrait {
+                // positioning
+                top: -25px;
+            }
+
+            @include atTabletsLandscape {
+                // positioning
+                top: -23px;
             }
         }
     }
@@ -115,7 +159,6 @@
         font-size: 0.875rem;
         font-weight: 400;
         line-height: 1.4;
-        // border: 1px solid red;
 
         @include atTabletsPortrait {
             // box model

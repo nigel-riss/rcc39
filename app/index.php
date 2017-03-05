@@ -3,38 +3,50 @@
 ?>
 
     <main class="site-main">
+        <!--
+            Hero
+        -->
         <section id="hero" class="hero">
             <div class="hero__content">
-                <h2 class="hero__title">Комплекс мероприятий<br> для электроснабжения частного дома</h2>
+                <h2 class="hero__title">Комплекс услуг<br> для электроснабжения частного дома</h2>
                 <ol class="hero__list">
-                    <li class="hero__item"><strong>Получение технических условий</strong> от электроснабжающих организаций</li>
-                    <li class="hero__item"><strong>Разработка и согласование документации</strong>, необходимой для подключения к электричеству</li>
-                    <li class="hero__item"><strong>Выполнение электромонтажных работ</strong> (наружное электроснабжение и внутреннее электрооборудование)</li>
-                    <li class="hero__item"><strong>Ввод электроустановки в эксплуатацию</strong></li>
-                    <li class="hero__item"><strong>Подготовка и подача документов</strong> в сбытовую организацию для заключения договора электроснабжения</li>
+                    <li class="hero__item"><a href="<?php echo esc_url(home_url('/')); ?>price#documents">Получение технических условий</a> от электроснабжающих организаций</li>
+                    <li class="hero__item"><a href="<?php echo esc_url(home_url('/')); ?>price#documents">Разработка и согласование документации</a>, необходимой для подключения к электричеству</li>
+                    <li class="hero__item"><a href="<?php echo esc_url(home_url('/')); ?>price#indoor">Выполнение электромонтажных работ</a> (наружное электроснабжение и внутреннее электрооборудование)</li>
+                    <li class="hero__item"><a href="<?php echo esc_url(home_url('/')); ?>price#documents">Ввод электроустановки в эксплуатацию</a></li>
+                    <li class="hero__item"><a href="<?php echo esc_url(home_url('/')); ?>price#documents">Подготовка и подача документов</a> в сбытовую организацию для заключения договора электроснабжения</li>
                 </ol>
                 <div class="hero__order">
-                    Данные мероприятия могут быть оказаны в комплексе или по отдельности
-                    <a class="hero__button" href="<?php echo esc_url(home_url('/')); ?>/order">Оставить заявку</a>
+                    Данные услуги могут быть оказаны в комплексе или по отдельности
+                    <a class="hero__button" href="<?php echo esc_url(home_url('/')); ?>order">Оставить заявку</a>
                 </div>
             </div>
         </section>
 
-        <section id="promo" class="promotion">
+        <!--
+            Promo
+        -->
+        <section class="promotion">
+            <div id="promo" class="fake-anchor"></div>
             <div class="wrapper">
                 <div class="promotion__title">
                     Акция!
                 </div>
                 <div class="promotion__text">
-                    При заказе полного комплекта услуг — <br> проект электроснабжения Вашего дома
+                    &nbsp;При заказе полного комплекса услуг<br>—&nbsp;проект электроснабжения Вашего дома
                 </div>
                 <div class="promotion__free">
-                    Бесплатно
+                    Бесплатно<sup>*</sup>
                 </div>
+                <a href="<?php echo esc_url(home_url('/')); ?>promo" class="promotion__button">Подробности акции</a>
             </div>
         </section>
 
-        <section id="services" class="site-section  site-section--grey">
+        <!--
+            Services
+        -->
+        <section class="site-section  site-section--grey">
+            <div id="services" class="fake-anchor"></div>
             <header class="site-section__header">
                 <div class="wrapper">
                     <h2 class="site-section__title">
@@ -56,7 +68,7 @@
                         </h3>
                         <ul class="service__list">
                             <li class="service__item">
-                                Рассчет потребляемой электрической мощности и подача заявки на Технические Условия для техприсоединения к электросетям
+                                Расчет потребляемой электрической мощности и подача заявки на Технические Условия для техприсоединения к электросетям
                             </li>
                         </ul>
                     </div>
@@ -156,14 +168,15 @@
         <!--
             Price section
         -->
-        <section id="price" class="site-section  site-section--price">
+        <section class="site-section  site-section--price">
+            <div id="price" class="fake-anchor"></div>
             <header class="site-section__header">
                 <div class="wrapper">
                     <h2 class="site-section__title">
                         <small>Стоимость работ</small> Прайс на услуги
                     </h2>
                     <p class="site-section__subtitle">
-                        Список основных услуг и их стоимость, для уточнения любых вопросов рассчета общей суммы проектов обратитесь к нашему менеджеру
+                        Список основных услуг и их стоимость, для уточнения любых вопросов расчета общей суммы проектов обратитесь к нашему менеджеру
                     </p>
                 </div>
             </header>
@@ -175,83 +188,17 @@
                     </h2>
                 </div>
                 <div class="price__body">
-                    <div class="price-item price-item--border-right">
-                        <div class="price-item__icon">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/documents.svg" alt="">
-                        </div>
-                        <h3 class="price-item__title">
-                            Оформление документации
-                        </h3>
-                        <table class="price-item__table">
-                            <tr>
-                                <td>Получение технических условий</td>
-                                <td>от 2000 руб</td>
-                            </tr>
-                            <tr>
-                                <td>Разработка и согласование проекта</td>
-                                <td>от 5000 руб</td>
-                            </tr>
-                            <tr>
-                                <td>Ввод в эксплуатацию</td>
-                                <td>от 10 000 руб</td>
-                            </tr>
-                        </table>
-                        <a href="<?php echo esc_url(home_url('/')); ?>/price" class="price-item__button">
-                            + Полный список услуг
-                        </a>
-                    </div>
 
-                    <div class="price-item">
-                        <div class="price-item__icon">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/power.svg" alt="">
-                        </div>
-                        <h3 class="price-item__title">
-                            Монтаж наружных сетей
-                        </h3>
-                        <table class="price-item__table">
-                            <tr>
-                                <td>Сборка и монтаж узла учёта электроэнергии</td>
-                                <td>от 10 000 руб</td>
-                            </tr>
-                            <tr>
-                                <td>Устройство кабельной линии в земле</td>
-                                <td>от 300 руб/метр</td>
-                            </tr>
-                            <tr>
-                                <td>Устройство воздушной линии</td>
-                                <td>от 70 руб/метр</td>
-                            </tr>
-                        </table>
-                        <a href="<?php echo esc_url(home_url('/')); ?>/price" class="price-item__button">
-                            + Полный список услуг
-                        </a>
-                    </div>
 
-                    <div class="price-item price-item--border-right price-item--border-top">
-                        <div class="price-item__icon">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/socket.svg" alt="">
-                        </div>
-                        <h3 class="price-item__title">
-                            Монтаж внутренних сетей
-                        </h3>
-                        <table class="price-item__table">
-                            <tr>
-                                <td>Проводки в кабельканале монтаж</td>
-                                <td>от 50 руб/п.м.</td>
-                            </tr>
-                            <tr>
-                                <td>Штроление потолка</td>
-                                <td>от 80 руб/п.м.</td>
-                            </tr>
-                            <tr>
-                                <td>Установка электрического счетчика</td>
-                                <td>от 1200 руб</td>
-                            </tr>
-                        </table>
-                        <a href="<?php echo esc_url(home_url('/')); ?>/price" class="price-item__button">
-                            + Полный список услуг
-                        </a>
-                    </div>
+                    <?php
+                        $counter = 0;
+                        if(have_posts()) {
+                            while(have_posts() && $counter < 3) {
+                                the_post();
+                                the_content();
+                            }
+                        }
+                    ?>
 
                     <div class="price-item price-item--border-top">
                         <div class="min-price">
@@ -274,6 +221,7 @@
             Portfolio
         -->
         <section class="site-section site-section--grey">
+            <div id="folio" class="fake-anchor"></div>
             <header class="site-section__header">
                 <div class="wrapper">
                     <h2 class="site-section__title">
@@ -281,18 +229,13 @@
                         Портфолио
                     </h2>
                     <p class="site-section__subtitle">
-                        Примеры работ выполненых нашей компанией. Детальное описание и весь список объектов смотрите в нашей галерее
+                        Примеры работ выполненых нашей компанией.
                     </p>
                 </div>
             </header>
 
             <div class="gallery">
-                <?php echo photo_gallery(6); ?>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
-                <div class="gallery__item"></div>
+            <?php echo photo_gallery(1); ?>
             </div>
         </section>
     </main>
@@ -354,6 +297,7 @@
                 </div>
             </div>
             <div class="site-footer__map">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" alt="rcc39 map">
             </div>
             <div id="feedback" class="site-footer__feedback-form">
                 <form action="" class="feedback-form">
@@ -374,8 +318,20 @@
                         <input class="feedback-form__input" type="text" placeholder="Тема">
                         <textarea class="feedback-form__textarea" name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
                         <submit class="feedback-form__submit">Отправить сообщение</submit>
+                        <p class="feedback-form__policy">Нажимая «отправить сообщение» вы соглашаетесь с <a href="<?php echo esc_url(home_url('/')); ?>policy">политикой конфиденциальности</a></p>
                     </fieldset>
                 </form>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="footer-logo">
+                RCC<span>39</span>
+            </div>
+
+            <div class="footer-copyrights">
+                © 2017 RCC39. Все права защищены <br>
+                With Love by <a href="http://www.katzcantread.com/">Katz Can’t Read</a>
             </div>
         </div>
     </footer>

@@ -17,6 +17,9 @@
     }
 
     &__contacts {
+        // positioning
+        position: relative;
+
         // box model
         padding-left: 10px; 
         padding-top: 30px;
@@ -82,6 +85,9 @@
     }
 
     &__feedback-form {
+        // positioning
+        position: relative;
+        
         // box model
         margin: 0 -15px;
 

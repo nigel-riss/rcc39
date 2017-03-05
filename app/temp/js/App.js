@@ -10346,7 +10346,7 @@ class SmoothScroll {
     constructor() {
         this.headerLinks = __WEBPACK_IMPORTED_MODULE_0_jquery___default()(".main-nav a");
         this.headerLinks.smoothScroll({
-            offset: -140,
+            // offset: -140,
             speed: 1000
         });
     }

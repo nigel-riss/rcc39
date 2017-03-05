@@ -9,6 +9,16 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    // typography
+    color: $copyDark;
+
+    &:hover {
+        // typography
+        color: $mainOrange;
+    }
+}
+
 *,
 *::after,
 *::before {

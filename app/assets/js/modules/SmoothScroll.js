@@ -5,7 +5,7 @@ class SmoothScroll {
     constructor() {
         this.headerLinks = $(".main-nav a");
         this.headerLinks.smoothScroll({
-            offset: -140,
+            // offset: -140,
             speed: 1000
         });
     }

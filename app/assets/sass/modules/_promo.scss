@@ -1,0 +1,78 @@
+.promo {
+    // box model
+    // padding: 20px 0;
+    padding-bottom: 20px;
+
+    @include atTabletsPortrait {
+        // box model
+        padding-bottom: 40px;
+    }
+    
+    &__title {
+        // box model
+        padding: 1em 0;
+        padding-top: 2em;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+        font-size: 1.5rem;
+        line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 2rem;
+        }
+    }
+
+    &__list {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-left: 1em;
+
+        li {
+            // box model
+            padding-bottom: 0.75em;
+
+            // typography
+            color: $copyDark;
+            font-size: 1rem;
+            line-height: 1.5;
+
+            @include atTabletsPortrait {
+                // typography
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    &__text {
+        // typography
+        color: $copyDark;
+        font-size: 1rem;
+        line-height: 1.5;
+
+        @include atTabletsPortrait {
+            // typography
+            font-size: 1.125rem;
+        }
+
+        &--alert {
+            // box model
+            padding: 1em 0;
+
+            // typography
+            color: $copyBrown;
+            font-family: $captionFont;
+            font-size: 1rem;
+            font-weight: 700;
+            text-align: center;
+
+            @include atTabletsPortrait {
+                // typography
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

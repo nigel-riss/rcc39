@@ -1,0 +1,35 @@
+.fake-anchor {
+    // positioning
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -9999;
+
+    // box model
+    height: 60px;
+    width: 100%;
+
+    @include atDesktop {
+        // positioning
+        top: -160px;
+
+        // box model
+        height: 160px;
+
+        &--feedback {
+            // positioning
+            top: -280px;
+
+            // box model
+            height: 280px;
+        }
+
+        &--table {
+            // positioning
+            top: -280px;
+
+            // box model
+            height: 280px;
+        }
+    }
+}

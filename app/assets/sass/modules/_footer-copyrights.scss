@@ -26,8 +26,14 @@
         text-align: center;
     }
 
-    span {
+    a {
         // typography
         color: $mainOrange;
+        text-decoration: none;
+
+        &:hover {
+            // typography
+            text-decoration: underline;
+        }
     }
 }

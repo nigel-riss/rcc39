@@ -1,4 +1,7 @@
 .promotion {
+    // positioning
+    position: relative;
+    
     // box model
     padding: 60px 0;
 
@@ -22,6 +25,7 @@
     &__title {
         // box model
         padding-bottom: 0.5em;
+        margin-left: -0.25em;
 
         // typography
         color: $copyBrown;
@@ -37,11 +41,15 @@
     }
 
     &__text {
+        // box model
+        margin-left: -0.5em;
+
         // typography
         color: $copyBrown;
         font-family: $mainFont;
         font-size: 1.25rem;
         line-height: 1.4;
+        text-indent: 0.5em;
 
         @include atDesktop {
             // typography
@@ -51,19 +59,48 @@
 
     &__free {
         // box model
+        padding-bottom: 0.75em;
         padding-top: 0.3em;
 
         // typography
         color: $copyDark;
         font-family: $mainFont;
         font-stretch: condensed;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 700;
         text-transform: uppercase;
 
         @include atDesktop {
             // typography
             font-size: 4rem;
+        }
+    }
+
+    &__button {
+        // box model
+        display: block;
+        padding: 10px;
+
+        // typography
+        color: $copyDark;
+        font-family: $captionFont;
+        text-decoration: none;
+
+        // visual
+        border: 2px solid $copyBrown;
+
+        &:hover {
+            // typography
+            color: #ffffff;
+
+            // visual
+            background-color: $copyBrown;
+        }
+
+        @include atTabletsPortrait {
+            // box model
+            margin: 0 auto;
+            width: 300px;
         }
     }
 }

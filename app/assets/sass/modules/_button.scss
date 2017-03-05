@@ -18,6 +18,9 @@
     transition: all 0.3s ease-out;
 
     &:hover {
+        // typography
+        color: $copyDark;
+        
         // visual
         background-color: $mainOrange;
     }
@@ -37,11 +40,5 @@
 
         // typography
         font-size: 1.5rem;
-    }
-
-    &::after {
-        content: " +";
-        color: $mainOrange;
-        display: inline-block;
     }
 }

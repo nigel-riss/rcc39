@@ -134,6 +134,19 @@
         }
     }
 
+    &__policy {
+        // box model
+        margin: 0;
+        padding: 0;
+        padding-top: 1rem;
+
+        // typography
+        color: $copyLight;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        text-align: center;
+    }
+
     &__submit {
         // box model
         display: block;

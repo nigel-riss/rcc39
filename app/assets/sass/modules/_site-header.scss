@@ -3,7 +3,6 @@
     position: relative;
 
     // box model
-    // height: 275px;
     padding-bottom: 15px;
 
     // visual
@@ -156,6 +155,11 @@
         @include atTabletsPortrait{
             // box model
             float: left;
+        }
+
+        @include atDesktop {
+            // box model
+            padding-left: 50px;
         }
     }
 
@@ -316,6 +320,17 @@
         @include atDesktop {
             font-size: 3rem;
         }
+
+        a {
+            // typography
+            color: #ffffff;
+            text-decoration: none;
+
+            &:hover {
+                // visual
+                opacity: 0.8;
+            }
+        }
     }
 
     &__button {
@@ -323,20 +338,15 @@
         display: block;
         margin-top: 10px;
         padding: 15px 20px;
-        // padding-left: 20px;
 
         // typography
         color: $copyDark;
-        // color: $mainYellow;
-        // color: #ffffff;
         font-family: $captionFont;
         font-size: 1.25rem;
         text-align: center;
         text-decoration: none;
         
         // visual
-        // border: 1px solid $mainYellow;
-        // border: 2px solid #ffffff;
         background-color: $mainYellow;
         transition: all 0.3s ease-out;
 
@@ -346,6 +356,7 @@
             
             // visual
             background-color: $copyDark;
+            background-color: $copyBrown;
         }
 
         @include atTabletsPortrait {
