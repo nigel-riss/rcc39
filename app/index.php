@@ -2,7 +2,7 @@
     get_header();
 ?>
 
-    <main class="site-main">
+    <!--<main class="site-main">-->
         <!--
             Hero
         -->
@@ -50,7 +50,7 @@
             <header class="site-section__header">
                 <div class="wrapper">
                     <h2 class="site-section__title">
-                        <small>Полный спектр</small>Наши услуги
+                        Наши услуги
                     </h2>
                     <p class="site-section__subtitle">
                         Выполняем электроснабжение домов индивидуальных и многоквартирных, коммерческой недвижимости под ключ
@@ -173,7 +173,7 @@
             <header class="site-section__header">
                 <div class="wrapper">
                     <h2 class="site-section__title">
-                        <small>Стоимость работ</small> Прайс на услуги
+                        Прайс на услуги
                     </h2>
                     <p class="site-section__subtitle">
                         Список основных услуг и их стоимость, для уточнения любых вопросов расчета общей суммы проектов обратитесь к нашему менеджеру
@@ -183,9 +183,9 @@
 
             <div class="price">
                 <div class="price__header">
-                    <h2 class="price__title">
+                    <!--<h2 class="price__title">
                         <small>Чем мы можем вам помочь?</small> Основные услуги
-                    </h2>
+                    </h2>-->
                 </div>
                 <div class="price__body">
 
@@ -225,8 +225,7 @@
             <header class="site-section__header">
                 <div class="wrapper">
                     <h2 class="site-section__title">
-                        <small>Наши объекты</small>
-                        Портфолио
+                        Наши работы
                     </h2>
                     <p class="site-section__subtitle">
                         Примеры работ выполненых нашей компанией.
@@ -235,7 +234,7 @@
             </header>
 
             <div class="gallery">
-            <?php echo photo_gallery(1); ?>
+            <?php echo photo_gallery(5); ?>
             </div>
         </section>
     </main>
@@ -300,7 +299,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" alt="rcc39 map">
             </div>
             <div id="feedback" class="site-footer__feedback-form">
-                <form action="" class="feedback-form">
+                <form method="POST" action="https://formspree.io/rcc39@mail.ru" class="feedback-form">
                     <div class="feedback-form__header">
                         <div class="feedback-form__icon">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/feedback.svg" alt="">
@@ -317,8 +316,10 @@
                         <input class="feedback-form__input" type="email" placeholder="Электропочта">
                         <input class="feedback-form__input" type="text" placeholder="Тема">
                         <textarea class="feedback-form__textarea" name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
-                        <submit class="feedback-form__submit">Отправить сообщение</submit>
-                        <p class="feedback-form__policy">Нажимая «отправить сообщение» вы соглашаетесь с <a href="<?php echo esc_url(home_url('/')); ?>policy">политикой конфиденциальности</a></p>
+                        <input class="feedback-form__submit" type="submit" value="Отправить сообщение"></input>
+                        <p class="feedback-form__policy">
+                        Нажимая «отправить сообщение» вы соглашаетесь с 
+                        <a href="<?php echo esc_url(home_url('/'));?>policy">политикой конфиденциальности</a></p>
                     </fieldset>
                 </form>
             </div>

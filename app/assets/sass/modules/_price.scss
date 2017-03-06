@@ -18,16 +18,16 @@
 
         @include atDesktop {
             // box model
+        }
+
+        @include atDesktopLarge {
+            // box model
             display: inline-block;
             vertical-align: top;
             width: 40%;
             height: 80vh;
             min-height: 800px;
             padding-top: 300px;
-        }
-
-        @include atDesktopLarge {
-            // box model
             width: 50%;    
         }
     }
@@ -43,11 +43,9 @@
         margin: 0;
         padding: 60px;
         padding-bottom: 37px;
-        // width: 600px;
-        // border: 1px solid red;
 
         // typography
-        color: #ffffff;
+        color: #ffffff !important;
         font-family: $captionFont;
         font-size: 2.25rem;
         text-align: left;
@@ -94,9 +92,8 @@
         // visual
 
         @include atDesktop {
-            // box model
-            height: 80vh;
-            width: 60%;
+            // visual
+            // background-image: url('../../assets/img/price-items-bg.jpg');
         }
 
         @include atDesktopLarge {

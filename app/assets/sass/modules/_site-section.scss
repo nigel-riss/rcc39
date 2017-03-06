@@ -15,7 +15,7 @@
 
     h2 {
         // box model
-        padding-top: 1em;
+        // padding-top: 1em;
 
         // typography
         color: $copyDark;
@@ -123,12 +123,12 @@
 
             // positioning
             position: absolute;
-            top: -30px;
+            top: -28px;
             left: 0px;
             z-index: -1;
 
             // box model
-            height: 104px;
+            height: 80px;
             width: 86px;
 
             // visual
@@ -138,12 +138,12 @@
 
             @include atTabletsPortrait {
                 // positioning
-                top: -25px;
+                top: -22px;
             }
 
             @include atTabletsLandscape {
                 // positioning
-                top: -23px;
+                top: -21px;
             }
         }
     }

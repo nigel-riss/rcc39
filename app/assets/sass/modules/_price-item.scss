@@ -13,7 +13,7 @@
     @include atTabletsPortrait {
         // box model
         height: 40vh;
-        min-height: 400px;
+        min-height: 450px;
         width: 50%;
         padding: 35px 30px;
 
@@ -28,6 +28,14 @@
 
     @include atDesktop {
         // box model
+        min-height: 370px;
+        padding: 30px;
+        padding-left: 60px;
+    }
+
+    @include atDesktopLarge {
+        // box model
+        min-height: 400px;
         padding: 30px 40px;
         padding-right: 20px;
     }
@@ -142,7 +150,7 @@
         position: relative;
 
         // box model
-        display: inline-block;
+        display: block;
 
         margin-top: 30px;
         padding: 10px 20px;
@@ -151,6 +159,7 @@
         color: $copyDark;
         font-family: $captionFont;
         font-size: 1rem;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         
@@ -164,6 +173,11 @@
 
             // visual
             background-color: $copyDark;
+        }
+
+        @include atTabletsPortrait {
+            // box model
+            display: inline-block;
         }
 
         @include atDesktop {

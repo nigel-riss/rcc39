@@ -1,3 +1,4 @@
+    </main>
     <footer class="site-footer">
             <div class="wrapper">
             <div class="footer-logo">

@@ -32,12 +32,14 @@
         border: 1px solid #eeeeee;
         
         &[colspan="4"] {
-            // typography
-            font-family: $captionFont;
-
             // visual
             background-color: #eeeeee;
-            // border: 1px solid $mainYellow;
+
+            p {
+                // typography
+                color: $copyDark;
+                font-family: $captionFont;
+            }
         }
     }
 
