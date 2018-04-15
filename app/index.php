@@ -296,10 +296,10 @@
                 </div>
             </div>
             <div class="site-footer__map">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" alt="rcc39 map">
+                <a href="https://2gis.ru/kaliningrad/query/%D0%A0%D0%A1%D0%9A%2C%20%D0%9E%D0%9E%D0%9E/firm/5630028815352441?queryState=center%2F20.501926%2C54.711771%2Fzoom%2F18" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.png" alt="rcc39 map"></a>
             </div>
             <div id="feedback" class="site-footer__feedback-form">
-                <form method="POST" action="https://formspree.io/rcc39@mail.ru" class="feedback-form">
+                <form method="POST" action="https://formspree.io/39rcc39@gmail.com" class="feedback-form">
                     <div class="feedback-form__header">
                         <div class="feedback-form__icon">
                             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/feedback.svg" alt="">
@@ -312,10 +312,10 @@
                         </h2>
                     </div>
                     <fieldset class="feedback-form__fieldset">
-                        <input class="feedback-form__input" type="text" placeholder="Ваше Имя">
-                        <input class="feedback-form__input" type="email" placeholder="Электропочта">
-                        <input class="feedback-form__input" type="text" placeholder="Тема">
-                        <textarea class="feedback-form__textarea" name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                        <input class="feedback-form__input" name="name" type="text" placeholder="Ваше Имя">
+                        <input class="feedback-form__input" name="email" type="email" placeholder="Электропочта">
+                        <input class="feedback-form__input" name="topic" type="text" placeholder="Тема">
+                        <textarea class="feedback-form__textarea" name="message" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
                         <input class="feedback-form__submit" type="submit" value="Отправить сообщение"></input>
                         <p class="feedback-form__policy">
                         Нажимая «отправить сообщение» вы соглашаетесь с 
@@ -333,11 +333,30 @@
             <div class="footer-copyrights">
                 © 2017 RCC39. Все права защищены <br>
                 With Love by <a href="http://www.katzcantread.com/">Katz Can’t Read</a>
+                <!-- Google Code for 5+ &#1084;&#1080;&#1085;&#1091;&#1090; &#1085;&#1072; &#1089;&#1072;&#1081;&#1090;&#1077; Conversion Page -->
+                <script type="text/javascript">
+                /* <![CDATA[ */
+                var google_conversion_id = 857276055;
+                var google_conversion_language = "en";
+                var google_conversion_format = "3";
+                var google_conversion_color = "ffffff";
+                var google_conversion_label = "SoXeCLDw6W8Ql_3jmAM";
+                var google_remarketing_only = false;
+                /* ]]> */
+                </script>
+                <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+                </script>
+                <noscript>
+                <div style="display:inline;">
+                <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/857276055/?label=SoXeCLDw6W8Ql_3jmAM&amp;guid=ON&amp;script=0"/>
+                </div>
+                </noscript>
             </div>
         </div>
     </footer>
 
     <script src="<?php echo get_stylesheet_directory_uri()?>/App.js"></script>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter43772214 = new Ya.Metrika({ id:43772214, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/43772214" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
     <?php wp_footer(); ?>
 </body>
 

@@ -1,0 +1,24 @@
+.up-button {
+    // positioning
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999;
+
+    // box model
+    padding: 7px 8px;
+    height: 48px;
+    width: 48px;
+
+    // typography
+    color: $copyDark;
+    color: red;
+    font-size: 2rem;
+    line-height: 1;
+
+    // visual
+    background-color: #ffffff;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+}
